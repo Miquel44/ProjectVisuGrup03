@@ -30,3 +30,8 @@ view(df_demographics)
 # Dataset para visualizar muertes de personal medico, periodistas, emmergency services.
 df_personnel <- data %>%select(report_date, ext_civdef_killed_cum, ext_press_killed_cum, ext_med_killed_cum )
 view(df_personnel)
+
+anyNA(df_killed_injured_cum)
+anyNA(df_killed_injured_perday)
+anyNA(df_demographics)
+anyNA(df_personnel)
