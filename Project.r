@@ -1,11 +1,12 @@
+# Load libraries
 library(readr)
 library(dplyr)
 library(ggplot2)
 library(tidyr)
 library(tibble)
 
-# Cargar el dataset
-data <- read_csv("/Users/lianbaguebatlle/Desktop/Dades/Segon/2nsemestre/VisualitzacioDades/Projecte/casualties_daily.csv")
+# Load dataset
+data <- read_csv("data/casualties_daily.csv")
 view(data)
 
 data <- as_tibble(data)
