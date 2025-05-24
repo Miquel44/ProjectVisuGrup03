@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bandera de Palestina interactiva</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #eee;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .bandera {
+      position: relative;
+      width: 600px;
+      height: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .franja {
+      height: 33.333%;
+      width: 100%;
+      border: none;
+      font-size: 1.2em;
+      cursor: pointer;
+      color: white;
+      z-index: 1;
+    }
+
+    .negro {
+      background-color: #000000;
+    }
+
+    .blanco {
+      background-color: #ffffff;
+      color: black;
+    }
+
+    .verde {
+      background-color: #009645;
+    }
+
+    .triangulo-btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 300px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 2;
+    }
+
+    .triangulo-btn::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 0;
+      border-top: 150px solid transparent;
+      border-bottom: 150px solid transparent;
+      border-left: 180px solid #ed2e38;
+    }
+
+
+    .franja {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .franja.negro:hover {
+      transform: translateY(-20px);
+      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
+      z-index: 3;
+    }
+
+    .franja.blanco:hover {
+      transform: translateX(20px);
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      z-index: 3;
+    }
+
+    .franja.verde:hover {
+      transform: translateY(20px);
+      box-shadow: 0 -10px 15px rgba(0,0,0,0.3);
+      z-index: 3;
+    }
+
+    .triangulo-btn {
+      transition: transform 0.3s ease;
+    }
+
+    .triangulo-btn:hover {
+      transform: translateX(-20px);
+    }
+
+    .triangulo-btn::before {
+      transition: filter 0.3s ease;
+    }
+
+    .triangulo-btn:hover::before {
+      filter: drop-shadow(5px 0 10px rgba(0,0,0,0.3));
+    }
+</style>
+</head>
+<body>
+
+  <div class="bandera">
+    <button class="triangulo-btn" onclick="alert('Triángulo rojo')"></button>
+    <button class="franja negro" onclick="alert('Franja negra')">Negro</button>
+    <button class="franja blanco" onclick="alert('Franja blanca')">Blanco</button>
+    <button class="franja verde" onclick="alert('Franja verde')">Verde</button>
+  </div>
+
+</body>
+</html>
