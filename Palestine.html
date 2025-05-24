@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Bandera de Palestina interactiva</title>
+  <title>Bandera Interactiva con Gráficos</title>
   <style>
     body {
       margin: 0;
@@ -12,6 +12,9 @@
       align-items: center;
       height: 100vh;
       font-family: sans-serif;
+      gap: 50px;
+      padding: 20px;
+      min-width: 1200px;
     }
 
     .bandera {
@@ -21,6 +24,18 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.5);
       display: flex;
       flex-direction: column;
+      flex-shrink: 0;
+    }
+
+    .info-box {
+      width: 500px;
+      height: 400px;
+      background: white;
+      border-radius: 10px;
+      padding: 0;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+      overflow: hidden;
+      position: relative;
     }
 
     .franja {
@@ -38,7 +53,6 @@
     .blanco { background-color: #ffffff; color: black; }
     .verde { background-color: #009645; }
 
-    /* Triángulo rojo - Modificaciones importantes */
     .triangulo-btn {
       position: absolute;
       top: 0;
@@ -48,8 +62,8 @@
       background: transparent;
       border: none;
       cursor: pointer;
-      z-index: 4; /* Capa más alta */
-      pointer-events: none; /* Permite clicks en elementos debajo */
+      z-index: 4;
+      pointer-events: none;
       transition: transform 0.3s ease;
     }
 
@@ -63,44 +77,78 @@
       border-top: 150px solid transparent;
       border-bottom: 150px solid transparent;
       border-left: 180px solid #ed2e38;
-      pointer-events: auto; /* Solo el triángulo recibe clicks */
+      pointer-events: auto;
     }
 
-    /* Efectos hover para franjas */
-    .franja.negro:hover {
-      transform: translateY(-30px);
-      box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-      z-index: 3; /* Debajo del triángulo (z-index:4) */
+    /* Efectos hover */
+    .franja.negro:hover { transform: translateY(-30px); box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
+    .franja.blanco:hover { transform: translateX(40px); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+    .franja.verde:hover { transform: translateY(30px); box-shadow: 0 -10px 15px rgba(0,0,0,0.3); }
+    .triangulo-btn:hover { transform: translateX(-40px); }
+    .triangulo-btn:hover::before { filter: drop-shadow(5px 0 10px rgba(0,0,0,0.3)); }
+
+    /* Sistema de gráficos */
+    .graph-frame {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: none;
     }
 
-    .franja.blanco:hover {
-      transform: translateX(40px);
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      z-index: 3;
-    }
+    .graph-active { display: block; }
 
-    .franja.verde:hover {
-      transform: translateY(30px);
-      box-shadow: 0 -10px 15px rgba(0,0,0,0.3);
-      z-index: 3;
-    }
-
-    /* Efecto hover para triángulo */
-    .triangulo-btn:hover {
-      transform: translateX(-40px);
-    }
-
-    .triangulo-btn:hover::before {
-      filter: drop-shadow(5px 0 10px rgba(0,0,0,0.3));
+    #defaultInfo {
+      text-align: center;
+      padding: 50px 20px;
     }
   </style>
 </head>
 <body>
   <div class="bandera">
-    <button class="triangulo-btn" onclick="alert('Triángulo rojo')"></button>
-    <button class="franja negro" onclick="alert('Franja negra')">Negro</button>
-    <button class="franja blanco" onclick="alert('Franja blanca')">Blanco</button>
-    <button class="franja verde" onclick="alert('Franja verde')">Verde</button>
+    <button class="triangulo-btn" onclick="mostrarGrafico('rojo')"></button>
+    <button class="franja negro" onclick="mostrarGrafico('negro')"></button>
+    <button class="franja blanco" onclick="mostrarGrafico('blanco')"></button>
+    <button class="franja verde" onclick="mostrarGrafico('verde')"></button>
   </div>
+
+  <div class="info-box">
+    <!-- Gráficos -->
+    <iframe id="grafico-rojo" class="graph-frame" src="grafico_rojo.html"></iframe>
+    <iframe id="grafico-negro" class="graph-frame" src="grafico_negro.html"></iframe>
+    <iframe id="grafico-blanco" class="graph-frame" src="grafico_blanco.html"></iframe>
+    <iframe id="grafico-verde" class="graph-frame" src="grafico_verde.html"></iframe>
+
+    <!-- Mensaje inicial -->
+    <div id="defaultInfo">
+      <h2>Bandera Interactiva</h2>
+      <p>Haz clic en cualquier elemento de la bandera para ver su gráfico correspondiente</p>
+    </div>
+  </div>
+
+  <script>
+    let graficoActual = null;
+
+    function mostrarGrafico(color) {
+      const defaultInfo = document.getElementById('defaultInfo');
+      const iframe = document.getElementById(`grafico-${color}`);
+
+      if (graficoActual === iframe) {
+        // Click doble: ocultar gráfico
+        iframe.classList.remove('graph-active');
+        defaultInfo.style.display = 'block';
+        graficoActual = null;
+      } else {
+        // Ocultar todos los gráficos
+        document.querySelectorAll('.graph-frame').forEach(frame => {
+          frame.classList.remove('graph-active');
+        });
+
+        // Mostrar gráfico seleccionado
+        iframe.classList.add('graph-active');
+        defaultInfo.style.display = 'none';
+        graficoActual = iframe;
+      }
+    }
+  </script>
 </body>
 </html>
