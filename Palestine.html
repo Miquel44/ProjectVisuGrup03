@@ -31,21 +31,14 @@
       cursor: pointer;
       color: white;
       z-index: 1;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
-    .negro {
-      background-color: #000000;
-    }
+    .negro { background-color: #000000; }
+    .blanco { background-color: #ffffff; color: black; }
+    .verde { background-color: #009645; }
 
-    .blanco {
-      background-color: #ffffff;
-      color: black;
-    }
-
-    .verde {
-      background-color: #009645;
-    }
-
+    /* Triángulo rojo - Modificaciones importantes */
     .triangulo-btn {
       position: absolute;
       top: 0;
@@ -55,7 +48,9 @@
       background: transparent;
       border: none;
       cursor: pointer;
-      z-index: 2;
+      z-index: 4; /* Capa más alta */
+      pointer-events: none; /* Permite clicks en elementos debajo */
+      transition: transform 0.3s ease;
     }
 
     .triangulo-btn::before {
@@ -68,56 +63,44 @@
       border-top: 150px solid transparent;
       border-bottom: 150px solid transparent;
       border-left: 180px solid #ed2e38;
+      pointer-events: auto; /* Solo el triángulo recibe clicks */
     }
 
-
-    .franja {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
+    /* Efectos hover para franjas */
     .franja.negro:hover {
-      transform: translateY(-20px);
+      transform: translateY(-30px);
       box-shadow: 0 10px 15px rgba(0,0,0,0.3);
-      z-index: 3;
+      z-index: 3; /* Debajo del triángulo (z-index:4) */
     }
 
     .franja.blanco:hover {
-      transform: translateX(20px);
+      transform: translateX(40px);
       box-shadow: 0 0 15px rgba(0,0,0,0.3);
       z-index: 3;
     }
 
     .franja.verde:hover {
-      transform: translateY(20px);
+      transform: translateY(30px);
       box-shadow: 0 -10px 15px rgba(0,0,0,0.3);
       z-index: 3;
     }
 
-    .triangulo-btn {
-      transition: transform 0.3s ease;
-    }
-
+    /* Efecto hover para triángulo */
     .triangulo-btn:hover {
-      transform: translateX(-20px);
-    }
-
-    .triangulo-btn::before {
-      transition: filter 0.3s ease;
+      transform: translateX(-40px);
     }
 
     .triangulo-btn:hover::before {
       filter: drop-shadow(5px 0 10px rgba(0,0,0,0.3));
     }
-</style>
+  </style>
 </head>
 <body>
-
   <div class="bandera">
     <button class="triangulo-btn" onclick="alert('Triángulo rojo')"></button>
     <button class="franja negro" onclick="alert('Franja negra')">Negro</button>
     <button class="franja blanco" onclick="alert('Franja blanca')">Blanco</button>
     <button class="franja verde" onclick="alert('Franja verde')">Verde</button>
   </div>
-
 </body>
 </html>
