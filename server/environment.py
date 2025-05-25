@@ -11,7 +11,8 @@ import os
 import sys
 import traceback
 import urllib
-
+import http.server
+import urllib.parse
 
 from copy import deepcopy
 from datetime import datetime, timezone
@@ -64,11 +65,8 @@ if USER == '':
 # Prints
 try:
     TERMINAL_WIDTH = os.get_terminal_size().columns
-except OSError as error:
-    if str(error) == '[WinError 6] The handle is invalid':
-        TERMINAL_WIDTH = 32
-    else:
-        raise
+except OSError:
+    TERMINAL_WIDTH = 80
 
 SECTION = '='
 SECTION_LINE = SECTION * TERMINAL_WIDTH

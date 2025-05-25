@@ -43,7 +43,7 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
             with open(file_path, 'rb') as f:
                 self.wfile.write(f.read())
         else:
-            self.send_error(500, f'File Not Found: "{self.path}"')
+            self.send_error(500, f'File Not Found: "{file_path}"')
 
     def do_GET(self):
         parsed_path = environment.urllib.parse.unquote(self.path)
@@ -85,6 +85,49 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     'local_styles.css',
                 ),
                 'text/css',
+            )
+        elif parsed_path == '/graphs/bloody_toll':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'bloody_toll',
+                    'victimasdiarias.html',
+                ),
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/infrastructure_loss':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'infrastructure_loss',
+                    'placeholder.html',
+                ),
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/types_of_death':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'placeholder.html',
+                ),
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/body_count':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'placeholder.html',
+                ),
+                'text/html',
             )
 
         else:
