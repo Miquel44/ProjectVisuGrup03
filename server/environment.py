@@ -64,8 +64,9 @@ if USER == '':
 # Prints
 try:
     TERMINAL_WIDTH = os.get_terminal_size().columns
-except OSError as error:
-    TERMINAL_WIDTH = 32
+except OSError:
+    TERMINAL_WIDTH = 80
+
 SECTION = '='
 SECTION_LINE = SECTION * TERMINAL_WIDTH
 SEPARATOR = '-'
