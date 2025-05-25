@@ -65,11 +65,7 @@ if USER == '':
 try:
     TERMINAL_WIDTH = os.get_terminal_size().columns
 except OSError as error:
-    if str(error) == '[WinError 6] The handle is invalid':
-        TERMINAL_WIDTH = 32
-    else:
-        raise
-
+    TERMINAL_WIDTH = 32
 SECTION = '='
 SECTION_LINE = SECTION * TERMINAL_WIDTH
 SEPARATOR = '-'
