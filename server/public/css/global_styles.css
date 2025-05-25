@@ -1,0 +1,30 @@
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --green-color: #149954;
+  --red-color: #e4312b;
+}
+
+
+body {
+  margin: 0;
+  background-image: url('../images/background_photo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+  min-width: 1200px;
+}
+
+.info-box {
+  background: var(--black-color);
+  color: var(--red-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: auto;
+  position: relative;
+  text-align: center;
+}
+

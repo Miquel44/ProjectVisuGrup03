@@ -1,0 +1,81 @@
+/* local_styles.css */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  height: 100vh;
+  padding: 20px;
+  margin: 0;
+}
+
+.flag {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+/* Stripes buttons */
+.stripe {
+  height: 33.333%;
+  width: 100%;
+  border: none;
+  font-size: 1.2em;
+  cursor: pointer;
+  color: white;
+  z-index: 2;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+/* Colors */
+.black { background-color: var(--black-color); }
+.white { background-color: var(--white-color); }
+.green { background-color: var(--green-color); }
+
+/* Triangle button */
+.triangle-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 180px;
+  height: 300px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 3;
+  transition: transform 0.3s ease;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+  pointer-events: auto; /* Enable pointer events only inside clip-path */
+}
+
+.triangle-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 150px solid transparent;
+  border-bottom: 150px solid transparent;
+  border-left: 180px solid var(--red-color);
+  pointer-events: none; /* Prevent hover on pseudo-element */
+}
+
+/* Hover effects */
+.stripe.black:hover { transform: translateY(-30px); box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
+.stripe.white:hover { transform: translateX(40px); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
+.stripe.green:hover { transform: translateY(30px); box-shadow: 0 -10px 15px rgba(0,0,0,0.3); }
+.triangle-btn:hover { transform: translateX(-40px); }
+.triangle-btn:hover::before { filter: drop-shadow(5px 0 10px rgba(0,0,0,0.3)); }
+
+/* Info box size fixed locally */
+.info-box {
+  width: 500px;
+  height: 400px;
+}

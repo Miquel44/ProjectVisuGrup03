@@ -1,8 +1,8 @@
-library(readr)
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-library(tibble)
+# Load datasets
+source("load_datasets.r")
+
+# Initial visualizations
+source("visualizaciones_iniciales.r")
 
 # Cargar el dataset
 data <- read_csv("/Users/lianbaguebatlle/Desktop/Dades/Segon/2nsemestre/VisualitzacioDades/Projecte/casualties_daily.csv")
@@ -38,4 +38,3 @@ anyNA(df_personnel)
 
 write_csv(df_killed_injured_cum, "/Users/lianbaguebatlle/Desktop/Dades/Segon/2nsemestre/VisualitzacioDades/Projecte/df_killed_injured_cum.csv")
 write_csv(df_demographics, "/Users/lianbaguebatlle/Desktop/Dades/Segon/2nsemestre/VisualitzacioDades/Projecte/df_demographics.csv")
-
