@@ -15,9 +15,9 @@ p <- plot_ly() %>%
     text = ~date,
     hoverinfo = "text",
     marker = list(
-      color = 'crimson',
-      opacity = 0.8,
-      line = list(color = '#333', width = 1)
+      color = '#de3131',
+      opacity = 1,
+      line = list(color = '#de3131', width = 1)
     ),
     name = "Muertes acumuladas"
   ) %>%
@@ -28,7 +28,7 @@ p <- plot_ly() %>%
     type = "scatter",
     mode = "lines",
     fill = "tozeroy",
-    line = list(color = "darkred", width = 2),
+    line = list(color = '#de3131', width = 2),
     fillcolor = "rgba(220, 20, 60, 0.1)",
     hoverinfo = "skip",
     name = "Tendencia"
@@ -40,28 +40,28 @@ p <- plot_ly() %>%
       font = list(
         family = "Open Sans, sans-serif",
         size = 22,
-        color = "#222"
+        color = '#de3131'
       )
     ),
     xaxis = list(
       title = "Fecha",
       tickangle = -45,
-      tickfont = list(family = "Open Sans", size = 12),
+      tickfont = list(family = "Open Sans", size = 12, color = '#de3131'),
       tickmode = "auto",
       nticks = 10
     ),
     yaxis = list(
       title = "Muertes acumuladas",
-      tickfont = list(family = "Open Sans", size = 12)
+      tickfont = list(family = "Open Sans", size = 12, color = '#de3131')
     ),
-    font = list(family = "Open Sans, sans-serif", size = 12),
+    font = list(family = "Open Sans, sans-serif", size = 12, color = '#de3131'),
     margin = list(b = 100, l = 60, r = 30, t = 70),
-    plot_bgcolor = "#fff",
-    paper_bgcolor = "#fff",
+    plot_bgcolor = "rgba(0, 0, 0, 0)",
+    paper_bgcolor = "rgba(0, 0, 0, 0.6)",
     showlegend = FALSE
   )
 
-# Click redirige al viewer
+# Añadir funcionalidad de click
 p <- htmlwidgets::onRender(p, "
   function(el, x) {
     el.on('plotly_click', function(d) {
@@ -71,5 +71,11 @@ p <- htmlwidgets::onRender(p, "
   }
 ")
 
+p <- plotly::config(p, displayModeBar = FALSE)
+
 # Guardar
-htmlwidgets::saveWidget(p, "index.html", selfcontained = TRUE)
+htmlwidgets::saveWidget(
+  p,
+  file = file.path(getwd(), "index.html"),
+  selfcontained = FALSE
+)
