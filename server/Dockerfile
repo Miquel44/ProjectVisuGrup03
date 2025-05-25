@@ -8,7 +8,7 @@ COPY environment.py /server
 COPY utils.py /server/
 COPY server.py /server/
 RUN mkdir -p /server/public/
-COPY public/* /server/public/
+COPY public/ /server/public/
 RUN chmod 744 /server/server.py
 EXPOSE 8080
 ENTRYPOINT ["python3", "-u", "/server/server.py"]
