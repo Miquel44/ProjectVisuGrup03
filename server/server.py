@@ -86,13 +86,46 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                 ),
                 'text/css',
             )
-        elif parsed_path == '/graphs/bloodytoll':
+        elif parsed_path == '/graphs/bloody_toll':
             self._serve_file(
                 environment.os.path.join(
                     environment.PUBLIC_HTML_FILES_PATH,
                     'graphs',
-                    'bloodytoll',
+                    'bloody_toll',
                     'victimasdiarias.html',
+                ),
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/infrastructure_loss':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'infrastructure_loss',
+                    'placeholder.html',
+                ),
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/types_of_death':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'placeholder.html',
+                ),
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/body_count':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'placeholder.html',
                 ),
                 'text/html',
             )
