@@ -7,6 +7,13 @@
   <link rel="stylesheet" href="../main/local_styles.css" />
 </head>
 <body>
+  <div class="title-container">
+    <div class="page-title">
+      <h1>Death in Palestine</h1>
+      <h2>Click any part of the flag to navigate to its corresponding graph page.</h2>
+    </div>
+  </div>
+
   <div class="flag">
     <button class="triangle-btn" onclick="changeWindow('graphs/bloody_toll')" aria-label="Red"></button>
     <button class="stripe black" onclick="changeWindow('graphs/infrastructure_loss')" aria-label="Black"></button>
@@ -14,9 +21,10 @@
     <button class="stripe green" onclick="changeWindow('graphs/body_count')" aria-label="Green"></button>
   </div>
 
-  <div class="info-box">
-    <h2>Death in Palestine</h2>
-    <p>Click any part of the flag to navigate to its corresponding graph page.</p>
+  <div class="disclaimer-box">
+    <a href="https://data.techforpalestine.org/updates/gaza-ministry-casualty-context/" target="_blank">
+      * These statistics specifically document casualties linked to Israeli military operations and IDF actions in Palestinian territories. Click to view data source.
+    </a>
   </div>
 
   <script>
