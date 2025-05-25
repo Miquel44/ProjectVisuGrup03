@@ -86,6 +86,16 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                 ),
                 'text/css',
             )
+        elif parsed_path == '/graphs/bloodytoll':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'bloodytoll',
+                    'victimasdiarias.html',
+                ),
+                'text/html',
+            )
 
         else:
             self.send_error(404, f'Path "{self.path}" Not Found.')
