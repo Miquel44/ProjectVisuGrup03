@@ -37,5 +37,8 @@ else
     sudo systemctl enable docker
     sudo systemctl start docker
 
+    sudo service docker start
+    sudo service docker status
+
     echo "Docker installation completed."
 fi
