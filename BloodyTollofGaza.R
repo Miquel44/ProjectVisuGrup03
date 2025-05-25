@@ -77,7 +77,7 @@ plot <- plot_ly(joined_data) %>%
   layout(
     title = list(
       text = "<b>The Bloody toll of gaza</b>",
-      font = list(size = 24, color = 'white', family = 'Arial Black')
+      font = list(size = 24, color = '#FF0000', family = 'Arial Black')
     ),
     xaxis = list(
       title = "",
