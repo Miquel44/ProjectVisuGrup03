@@ -35,3 +35,7 @@ anyNA(df_killed_injured_cum)
 anyNA(df_killed_injured_perday)
 anyNA(df_demographics)
 anyNA(df_personnel)
+
+write_csv(df_killed_injured_cum, "/Users/lianbaguebatlle/Desktop/Dades/Segon/2nsemestre/VisualitzacioDades/Projecte/df_killed_injured_cum.csv")
+write_csv(df_demographics, "/Users/lianbaguebatlle/Desktop/Dades/Segon/2nsemestre/VisualitzacioDades/Projecte/df_demographics.csv")
+

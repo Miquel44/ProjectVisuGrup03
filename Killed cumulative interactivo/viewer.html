@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Muertes acumuladas</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+      color: #333;
+      user-select: none;
+    }
+    h1 {
+      text-align: center;
+      color: #0a3d62;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    #output {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: #3b3b98;
+      white-space: pre-wrap;
+    }
+    #grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3px;
+      max-width: 95vw;
+      margin: 0 auto;
+      user-select: none;
+    }
+    .emoji {
+      font-size: 18px;
+      line-height: 1;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease;
+      cursor: default;
+    }
+    .emoji:hover {
+      transform: scale(1.3);
+      filter: drop-shadow(0 0 2px rgba(58, 58, 58, 0.3));
+    }
+  </style>
+</head>
+<body>
+  <h1>Muertes acumuladas</h1>
+  <div id="output">Cargando...</div>
+  <div id="grid"></div>
+
+  <script>
+    const output = document.getElementById("output");
+    const grid = document.getElementById("grid");
+    const params = new URLSearchParams(window.location.search);
+    const date = params.get("date");
+
+    console.log("📅 Parámetro date recibido:", date);
+
+    if (!date) {
+      output.innerText = "❌ Parámetro 'date' no proporcionado en la URL.";
+    } else {
+      output.innerText = `🔍 Buscando datos para la fecha: ${date}...`;
+
+      fetch(window.location.origin + "/demographics_cum.json")
+        .then(response => {
+          console.log("📁 Archivo JSON cargado, status:", response.status);
+          if (!response.ok) {
+            throw new Error(`No se pudo cargar el archivo JSON (status ${response.status})`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log("📊 Datos recibidos (primeros 3 registros):", data.slice(0, 3));
+
+          const entry = data.find(d => d.report_date === date);
+
+          if (!entry) {
+            const msg = `⚠️ Fecha no encontrada en los datos: ${date}`;
+            console.warn(msg);
+            output.innerText = msg;
+            return;
+          }
+
+          console.log("✅ Entrada encontrada para la fecha:", entry);
+
+          const children = entry.ext_killed_children_cum || 0;
+          const women = entry.ext_killed_women_cum || 0;
+          const men = entry.killed_other_cum || 0;
+          const total = children + women + men;
+          const batchSize = 500;
+
+          if (total === 0) {
+            output.innerText = `ℹ️ No hay muertes registradas para la fecha ${date}.`;
+            return;
+          }
+
+          let added = 0;
+          const emojiList = [];
+
+          emojiList.push(...Array(children).fill("👶🏻"));
+          emojiList.push(...Array(women).fill("👩🏼"));
+          emojiList.push(...Array(men).fill("👨🏽"));
+
+          function addBatch() {
+            const fragment = document.createDocumentFragment();
+            const limit = Math.min(added + batchSize, total);
+
+            for (; added < limit; added++) {
+              const div = document.createElement("div");
+              div.className = "emoji";
+              div.textContent = emojiList[added];
+              fragment.appendChild(div);
+            }
+            grid.appendChild(fragment);
+
+            if (added < total) {
+              output.innerText = `Muertes acumuladas hasta el ${date}: ${total.toLocaleString()} (${added.toLocaleString()} / ${total.toLocaleString()})`;
+              setTimeout(addBatch, 10);
+            } else {
+              output.innerText = `Muertes acumuladas hasta el ${date}: ${total.toLocaleString()} (👶 ${children}, 🧍‍♀️ ${women}, 🧍‍♂️ ${men})`;
+            }
+          }
+
+          addBatch();
+        })
+        .catch(error => {
+          console.error("❌ Error en fetch o procesamiento:", error);
+          output.innerText = `❌ Error cargando datos: ${error.message}`;
+        });
+    }
+  </script>
+</body>
+</html>
