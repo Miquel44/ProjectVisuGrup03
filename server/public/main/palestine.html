@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Death in Palestine</title>
+  <link rel="stylesheet" href="../css/global_styles.css" />
+  <link rel="stylesheet" href="../main/local_styles.css" />
+</head>
+<body>
+  <div class="flag">
+    <button class="triangle-btn" onclick="changeWindow('graphs/placeHolderA.html')" aria-label="Red"></button>
+    <button class="stripe black" onclick="changeWindow('graphs/placeHolderB.html')" aria-label="Black"></button>
+    <button class="stripe white" onclick="changeWindow('graphs/placeHolderC.html')" aria-label="White"></button>
+    <button class="stripe green" onclick="changeWindow('graphs/placeHolderD.html')" aria-label="Green"></button>
+  </div>
+
+  <div class="info-box">
+    <h2>Death in Palestine</h2>
+    <p>Click any part of the flag to navigate to its corresponding graph page.</p>
+  </div>
+
+  <script>
+    function changeWindow(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>
