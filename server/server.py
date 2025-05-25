@@ -43,7 +43,7 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
             with open(file_path, 'rb') as f:
                 self.wfile.write(f.read())
         else:
-            self.send_error(500, f'File Not Found: "{self.path}"')
+            self.send_error(500, f'File Not Found: "{file_path}"')
 
     def do_GET(self):
         parsed_path = environment.urllib.parse.unquote(self.path)
