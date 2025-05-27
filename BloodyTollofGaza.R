@@ -83,7 +83,7 @@ plot <- plot_ly(joined_data) %>%
       title = "",
       gridcolor = 'rgba(255,255,255,0.1)',
       linecolor = 'rgba(255,255,255,0.5)',
-      tickfont = list(color = 'white', size = 12)
+      tickfont = list(color = '#FF0000', size = 12)
     ),
     yaxis = list(
       title = "",
@@ -92,8 +92,8 @@ plot <- plot_ly(joined_data) %>%
       zeroline = FALSE,        # Oculta la línea cero
       showline = FALSE         # Oculta la línea del eje
     ),
-    plot_bgcolor = 'black',
-    paper_bgcolor = 'black',
+    plot_bgcolor = 'rgba(0,0,0,0.5)',
+    paper_bgcolor = 'rgba(0,0,0,0.5)',
     margin = list(t = 60, b = 40, l = 60, r = 40),
     hoverlabel = list(
       font = list(family = 'Arial', size = 12, color = 'white'),
@@ -180,5 +180,5 @@ function(el) {
 }
 ")
 
-saveWidget(plot, "VictimasDiarias.html", selfcontained = TRUE, 
+saveWidget(plot, "victimasdiarias.html", selfcontained = TRUE, 
            title = "Monitor de Conflictos Armados")
