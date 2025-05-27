@@ -1,0 +1,57 @@
+:root {
+  --black-color: #000000;
+  --white-color: #ffffff;
+  --green-color: #149954;
+  --red-color: #e4312b;
+}
+
+body {
+  margin: 0;
+  background-image: url('../images/background_photo.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: sans-serif;
+}
+
+/* Global Bottom Banner */
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--red-color);
+  color: var(--black-color);
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-top: 2px solid var(--black-color);
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+.bottom-banner a {
+  color: var(--white-color);
+  text-decoration: underline;
+  display: inline;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .bottom-banner {
+    font-size: 0.75em;
+    padding: 8px;
+  }
+}
+
+.info-box {
+  background: var(--black-color);
+  color: var(--red-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  overflow: auto;
+  position: relative;
+  text-align: center;
+}

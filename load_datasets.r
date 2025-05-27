@@ -35,3 +35,16 @@ anyNA(df_killed_injured_cum)
 anyNA(df_killed_injured_perday)
 anyNA(df_demographics)
 anyNA(df_personnel)
+
+context_daily <- read_csv("data/chronology_nodes_clean.csv")
+context_2023 <- context_daily %>%
+  filter(format(date, "%Y") == "2023") %>% drop_na(links)
+
+context_2024 <- context_daily %>%
+  filter(format(date, "%Y") == "2024") %>% drop_na(links)
+
+data2024 <- data %>% 
+  filter(format(report_date, "%Y") == "2024")
+
+joined_data <- context_2024 %>%
+  full_join(data2024, by = c("date" = "report_date"))

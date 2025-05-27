@@ -1,0 +1,113 @@
+/* ----------  BASE LAYOUT ---------- */
+body{
+  display:flex;
+  flex-direction:column;       /* apila los bloques uno debajo del otro */
+  align-items:center;
+  justify-content:flex-start;
+  min-height:100vh;
+  margin:0;
+  padding:1.25rem;             /* 20 px → rem */
+  gap:1.5rem;                  /* espacio natural entre título-bandera-aviso */
+  overflow: hidden;
+  height: 100%;
+}
+
+/* ----------  CONTENEDOR DEL TÍTULO ---------- */
+.title-container{
+  width:clamp(280px,90%,800px);
+  background:rgba(0,0,0,.6);
+  border:1px solid #f00;
+  padding:1.25rem;
+  border-radius:.625rem;
+  box-shadow:0 4px 6px rgba(0,0,0,.8);
+  backdrop-filter:blur(2px);
+  z-index:5;
+}
+
+.page-title h1{
+  margin:0;
+  font-size:clamp(1.4rem,5vw,2.5rem);
+  color:#f00;
+  text-align:center;
+  font-family:Arial, sans-serif;
+  text-shadow:2px 2px 4px #0007;
+}
+
+.page-title h2{
+  margin:.5rem 0 0;
+  font-size:clamp(.9rem,3.2vw,1.2rem);
+  font-weight:bold;
+  color:#f00;
+  text-align:center;
+  text-shadow:2px 2px 4px #0007;
+}
+
+/* ----------  BANDERA ---------- */
+.flag{
+  position:relative;
+  width:50vw;
+  aspect-ratio:2/1;
+  box-shadow:0 0 10px rgba(0,0,0,.5);
+  display:flex;
+  flex-direction:column;
+  margin-top:auto;
+  margin-bottom:auto;
+  top:-4vh;
+}
+
+.stripe{
+  flex:1 0 0;                      /* tres franjas iguales */
+  border:none;
+  cursor:pointer;
+  z-index:2;
+  transition:transform .3s ease,box-shadow .3s ease;
+}
+
+.black{background:#000;}
+.white{background:#fff;}
+.green{background:#009639;}
+
+.triangle-btn{
+  position:absolute;
+  top:0;
+  left:0;
+  width:30%;                       /* siempre relativo al ancho */
+  height:100%;
+  background:#f00;
+  border:none;
+  cursor:pointer;
+  z-index:3;
+  clip-path:polygon(0 0,100% 50%,0 100%);
+  transition:transform .3s ease;
+}
+
+/* ----------  EFECTOS HOVER (solo en dispositivos con puntero) ---------- */
+@media (hover:hover){
+  .black:hover { transform:translateY(-20%);  box-shadow:0 10px 15px rgba(0,0,0,.3); }
+  .white:hover { transform:translateX(15%); box-shadow:0 0 15px rgba(0,0,0,.3); }
+  .green:hover { transform:translateY(20%);   box-shadow:0 -10px 15px rgba(0,0,0,.3); }
+  .triangle-btn:hover{ transform:translateX(-30%); }
+}
+
+/* ----------  CAJA DE AVISO / DISCLAIMER ---------- */
+.disclaimer-box{
+  position:fixed;                 /* siempre en la esquina */
+  bottom:clamp(10px,2.5vw,20px);
+  left:clamp(10px,2.5vw,20px);
+  width:clamp(200px,40vw,320px);
+  background:rgba(0,0,0,.5);
+  border:2px solid #f00;
+  border-radius:.3125rem;
+  padding:.9rem;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  backdrop-filter:blur(2px);
+  z-index:4;
+}
+
+.disclaimer-box a{
+  font-size:.75rem;
+  line-height:1.4;
+  color:#f00;
+  text-decoration:underline;
+  display:block;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Death in Palestine</title>
+  <link rel="stylesheet" href="../css/global_styles.css" />
+  <link rel="stylesheet" href="../main/local_styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/favicon-16x16.png">
+  <link rel="manifest" href="../static/site.webmanifest">
+</head>
+<body>
+
+  <!-- TÍTULO ----------------------------------------------------------- -->
+  <div class="title-container">
+    <div class="page-title">
+      <h1>Death in Palestine</h1>
+      <h2>Click any part of the flag to navigate to its corresponding graph page.</h2>
+    </div>
+  </div>
+
+  <!-- BANDERA ---------------------------------------------------------- -->
+  <div class="flag">
+    <!-- triángulo rojo -->
+    <button class="triangle-btn"
+            onclick="changeWindow('graphs/bloody_toll')"
+            aria-label="Red"></button>
+
+    <!-- franjas -->
+    <button class="stripe black"
+            onclick="changeWindow('graphs/infrastructure_loss')"
+            aria-label="Black"></button>
+
+    <button class="stripe white"
+            onclick="changeWindow('graphs/types_of_death')"
+            aria-label="White"></button>
+
+    <button class="stripe green"
+            onclick="changeWindow('graphs/body_count')"
+            aria-label="Green"></button>
+  </div>
+
+  <!-- DISCLAIMER (vuelve a la esquina) --------------------------------
+  <div class="disclaimer-box">
+    <a href="https://data.techforpalestine.org/updates/gaza-ministry-casualty-context/"
+       target="_blank">
+      * These statistics specifically document casualties linked to Israeli military operations
+        and IDF actions in Palestinian territories. Click to view data source.
+    </a>
+  </div> -->
+
+  <div class="bottom-banner">
+    Data and information obtained from 
+    <a href="https://data.techforpalestine.org" target="_blank">techforpalestine.org</a> and 
+    <a href="https://chronology.palestine-studies.org/" target="_blank">chronology.palestine-studies.org</a>.<br>
+    These statistics specifically document casualties linked to Israeli military operations and IDF actions in Palestinian 
+    territories. <a href="https://data.techforpalestine.org/updates/gaza-ministry-casualty-context/" target="_blank">See</a>.
+  </div>
+
+  <script>
+    function changeWindow(url) {
+      window.location.href = url;
+    }
+  </script>
+</body>
+</html>

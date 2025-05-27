@@ -1,0 +1,3964 @@
+[
+  {
+    "report_date": "2023-10-07",
+    "ext_killed_cum": 232,
+    "ext_killed_children_cum": 0,
+    "ext_killed_women_cum": 0,
+    "killed_other_cum": 232
+  },
+  {
+    "report_date": "2023-10-08",
+    "ext_killed_cum": 370,
+    "ext_killed_children_cum": 78,
+    "ext_killed_women_cum": 41,
+    "killed_other_cum": 251
+  },
+  {
+    "report_date": "2023-10-09",
+    "ext_killed_cum": 560,
+    "ext_killed_children_cum": 91,
+    "ext_killed_women_cum": 61,
+    "killed_other_cum": 408
+  },
+  {
+    "report_date": "2023-10-10",
+    "ext_killed_cum": 900,
+    "ext_killed_children_cum": 260,
+    "ext_killed_women_cum": 230,
+    "killed_other_cum": 410
+  },
+  {
+    "report_date": "2023-10-11",
+    "ext_killed_cum": 1100,
+    "ext_killed_children_cum": 398,
+    "ext_killed_women_cum": 230,
+    "killed_other_cum": 472
+  },
+  {
+    "report_date": "2023-10-12",
+    "ext_killed_cum": 1417,
+    "ext_killed_children_cum": 500,
+    "ext_killed_women_cum": 276,
+    "killed_other_cum": 641
+  },
+  {
+    "report_date": "2023-10-13",
+    "ext_killed_cum": 1900,
+    "ext_killed_children_cum": 500,
+    "ext_killed_women_cum": 392,
+    "killed_other_cum": 1008
+  },
+  {
+    "report_date": "2023-10-14",
+    "ext_killed_cum": 2228,
+    "ext_killed_children_cum": 600,
+    "ext_killed_women_cum": 600,
+    "killed_other_cum": 1028
+  },
+  {
+    "report_date": "2023-10-15",
+    "ext_killed_cum": 2670,
+    "ext_killed_children_cum": 700,
+    "ext_killed_women_cum": 735,
+    "killed_other_cum": 1235
+  },
+  {
+    "report_date": "2023-10-16",
+    "ext_killed_cum": 2808,
+    "ext_killed_children_cum": 853,
+    "ext_killed_women_cum": 936,
+    "killed_other_cum": 1019
+  },
+  {
+    "report_date": "2023-10-17",
+    "ext_killed_cum": 3000,
+    "ext_killed_children_cum": 940,
+    "ext_killed_women_cum": 936,
+    "killed_other_cum": 1124
+  },
+  {
+    "report_date": "2023-10-18",
+    "ext_killed_cum": 3478,
+    "ext_killed_children_cum": 1000,
+    "ext_killed_women_cum": 936,
+    "killed_other_cum": 1542
+  },
+  {
+    "report_date": "2023-10-19",
+    "ext_killed_cum": 3785,
+    "ext_killed_children_cum": 1524,
+    "ext_killed_women_cum": 936,
+    "killed_other_cum": 1325
+  },
+  {
+    "report_date": "2023-10-20",
+    "ext_killed_cum": 4137,
+    "ext_killed_children_cum": 1756,
+    "ext_killed_women_cum": 936,
+    "killed_other_cum": 1445
+  },
+  {
+    "report_date": "2023-10-21",
+    "ext_killed_cum": 4385,
+    "ext_killed_children_cum": 1756,
+    "ext_killed_women_cum": 967,
+    "killed_other_cum": 1662
+  },
+  {
+    "report_date": "2023-10-22",
+    "ext_killed_cum": 4651,
+    "ext_killed_children_cum": 1873,
+    "ext_killed_women_cum": 1023,
+    "killed_other_cum": 1755
+  },
+  {
+    "report_date": "2023-10-23",
+    "ext_killed_cum": 5087,
+    "ext_killed_children_cum": 2055,
+    "ext_killed_women_cum": 1119,
+    "killed_other_cum": 1913
+  },
+  {
+    "report_date": "2023-10-24",
+    "ext_killed_cum": 5791,
+    "ext_killed_children_cum": 2360,
+    "ext_killed_women_cum": 1292,
+    "killed_other_cum": 2139
+  },
+  {
+    "report_date": "2023-10-25",
+    "ext_killed_cum": 6547,
+    "ext_killed_children_cum": 2704,
+    "ext_killed_women_cum": 1584,
+    "killed_other_cum": 2259
+  },
+  {
+    "report_date": "2023-10-26",
+    "ext_killed_cum": 7028,
+    "ext_killed_children_cum": 3038,
+    "ext_killed_women_cum": 1600,
+    "killed_other_cum": 2390
+  },
+  {
+    "report_date": "2023-10-27",
+    "ext_killed_cum": 7326,
+    "ext_killed_children_cum": 3038,
+    "ext_killed_women_cum": 1726,
+    "killed_other_cum": 2562
+  },
+  {
+    "report_date": "2023-10-28",
+    "ext_killed_cum": 7703,
+    "ext_killed_children_cum": 3168,
+    "ext_killed_women_cum": 1916,
+    "killed_other_cum": 2619
+  },
+  {
+    "report_date": "2023-10-29",
+    "ext_killed_cum": 8005,
+    "ext_killed_children_cum": 3324,
+    "ext_killed_women_cum": 2062,
+    "killed_other_cum": 2619
+  },
+  {
+    "report_date": "2023-10-30",
+    "ext_killed_cum": 8309,
+    "ext_killed_children_cum": 3457,
+    "ext_killed_women_cum": 2136,
+    "killed_other_cum": 2716
+  },
+  {
+    "report_date": "2023-10-31",
+    "ext_killed_cum": 8525,
+    "ext_killed_children_cum": 3542,
+    "ext_killed_women_cum": 2187,
+    "killed_other_cum": 2796
+  },
+  {
+    "report_date": "2023-11-01",
+    "ext_killed_cum": 8805,
+    "ext_killed_children_cum": 3650,
+    "ext_killed_women_cum": 2252,
+    "killed_other_cum": 2903
+  },
+  {
+    "report_date": "2023-11-02",
+    "ext_killed_cum": 9061,
+    "ext_killed_children_cum": 3760,
+    "ext_killed_women_cum": 2326,
+    "killed_other_cum": 2975
+  },
+  {
+    "report_date": "2023-11-03",
+    "ext_killed_cum": 9257,
+    "ext_killed_children_cum": 3826,
+    "ext_killed_women_cum": 2405,
+    "killed_other_cum": 3026
+  },
+  {
+    "report_date": "2023-11-04",
+    "ext_killed_cum": 9485,
+    "ext_killed_children_cum": 3900,
+    "ext_killed_women_cum": 2509,
+    "killed_other_cum": 3076
+  },
+  {
+    "report_date": "2023-11-05",
+    "ext_killed_cum": 9770,
+    "ext_killed_children_cum": 4008,
+    "ext_killed_women_cum": 2550,
+    "killed_other_cum": 3212
+  },
+  {
+    "report_date": "2023-11-06",
+    "ext_killed_cum": 10022,
+    "ext_killed_children_cum": 4108,
+    "ext_killed_women_cum": 2610,
+    "killed_other_cum": 3304
+  },
+  {
+    "report_date": "2023-11-07",
+    "ext_killed_cum": 10328,
+    "ext_killed_children_cum": 4237,
+    "ext_killed_women_cum": 2719,
+    "killed_other_cum": 3372
+  },
+  {
+    "report_date": "2023-11-08",
+    "ext_killed_cum": 10569,
+    "ext_killed_children_cum": 4324,
+    "ext_killed_women_cum": 2823,
+    "killed_other_cum": 3422
+  },
+  {
+    "report_date": "2023-11-09",
+    "ext_killed_cum": 10818,
+    "ext_killed_children_cum": 4412,
+    "ext_killed_women_cum": 2918,
+    "killed_other_cum": 3488
+  },
+  {
+    "report_date": "2023-11-10",
+    "ext_killed_cum": 11078,
+    "ext_killed_children_cum": 4506,
+    "ext_killed_women_cum": 3027,
+    "killed_other_cum": 3545
+  },
+  {
+    "report_date": "2023-11-11",
+    "ext_killed_cum": 11129,
+    "ext_killed_children_cum": 4540,
+    "ext_killed_women_cum": 3044,
+    "killed_other_cum": 3545
+  },
+  {
+    "report_date": "2023-11-12",
+    "ext_killed_cum": 11180,
+    "ext_killed_children_cum": 4609,
+    "ext_killed_women_cum": 3100,
+    "killed_other_cum": 3471
+  },
+  {
+    "report_date": "2023-11-13",
+    "ext_killed_cum": 11240,
+    "ext_killed_children_cum": 4630,
+    "ext_killed_women_cum": 3130,
+    "killed_other_cum": 3480
+  },
+  {
+    "report_date": "2023-11-14",
+    "ext_killed_cum": 11320,
+    "ext_killed_children_cum": 4650,
+    "ext_killed_women_cum": 3145,
+    "killed_other_cum": 3525
+  },
+  {
+    "report_date": "2023-11-15",
+    "ext_killed_cum": 11500,
+    "ext_killed_children_cum": 4710,
+    "ext_killed_women_cum": 3160,
+    "killed_other_cum": 3630
+  },
+  {
+    "report_date": "2023-11-16",
+    "ext_killed_cum": 12000,
+    "ext_killed_children_cum": 5000,
+    "ext_killed_women_cum": 3300,
+    "killed_other_cum": 3700
+  },
+  {
+    "report_date": "2023-11-17",
+    "ext_killed_cum": 12000,
+    "ext_killed_children_cum": 5000,
+    "ext_killed_women_cum": 3300,
+    "killed_other_cum": 3700
+  },
+  {
+    "report_date": "2023-11-18",
+    "ext_killed_cum": 12300,
+    "ext_killed_children_cum": 5000,
+    "ext_killed_women_cum": 3300,
+    "killed_other_cum": 4000
+  },
+  {
+    "report_date": "2023-11-19",
+    "ext_killed_cum": 13000,
+    "ext_killed_children_cum": 5500,
+    "ext_killed_women_cum": 3500,
+    "killed_other_cum": 4000
+  },
+  {
+    "report_date": "2023-11-20",
+    "ext_killed_cum": 13300,
+    "ext_killed_children_cum": 5600,
+    "ext_killed_women_cum": 3550,
+    "killed_other_cum": 4150
+  },
+  {
+    "report_date": "2023-11-21",
+    "ext_killed_cum": 14128,
+    "ext_killed_children_cum": 5840,
+    "ext_killed_women_cum": 3920,
+    "killed_other_cum": 4368
+  },
+  {
+    "report_date": "2023-11-22",
+    "ext_killed_cum": 14532,
+    "ext_killed_children_cum": 6000,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4532
+  },
+  {
+    "report_date": "2023-11-23",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-24",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-25",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-26",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-27",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-28",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-29",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-11-30",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-12-01",
+    "ext_killed_cum": 14800,
+    "ext_killed_children_cum": 6150,
+    "ext_killed_women_cum": 4000,
+    "killed_other_cum": 4650
+  },
+  {
+    "report_date": "2023-12-02",
+    "ext_killed_cum": 15207,
+    "ext_killed_children_cum": 6387,
+    "ext_killed_women_cum": 4257,
+    "killed_other_cum": 4563
+  },
+  {
+    "report_date": "2023-12-03",
+    "ext_killed_cum": 15523,
+    "ext_killed_children_cum": 6600,
+    "ext_killed_women_cum": 4300,
+    "killed_other_cum": 4623
+  },
+  {
+    "report_date": "2023-12-04",
+    "ext_killed_cum": 15899,
+    "ext_killed_children_cum": 6800,
+    "ext_killed_women_cum": 4500,
+    "killed_other_cum": 4599
+  },
+  {
+    "report_date": "2023-12-05",
+    "ext_killed_cum": 16248,
+    "ext_killed_children_cum": 7112,
+    "ext_killed_women_cum": 4885,
+    "killed_other_cum": 4251
+  },
+  {
+    "report_date": "2023-12-06",
+    "ext_killed_cum": 16827,
+    "ext_killed_children_cum": 7550,
+    "ext_killed_women_cum": 5000,
+    "killed_other_cum": 4277
+  },
+  {
+    "report_date": "2023-12-07",
+    "ext_killed_cum": 17177,
+    "ext_killed_children_cum": 7729,
+    "ext_killed_women_cum": 5153,
+    "killed_other_cum": 4295
+  },
+  {
+    "report_date": "2023-12-08",
+    "ext_killed_cum": 17487,
+    "ext_killed_children_cum": 7729,
+    "ext_killed_women_cum": 5246,
+    "killed_other_cum": 4512
+  },
+  {
+    "report_date": "2023-12-09",
+    "ext_killed_cum": 17700,
+    "ext_killed_children_cum": 7870,
+    "ext_killed_women_cum": 6121,
+    "killed_other_cum": 3709
+  },
+  {
+    "report_date": "2023-12-10",
+    "ext_killed_cum": 17997,
+    "ext_killed_children_cum": 7875,
+    "ext_killed_women_cum": 6130,
+    "killed_other_cum": 3992
+  },
+  {
+    "report_date": "2023-12-11",
+    "ext_killed_cum": 18205,
+    "ext_killed_children_cum": 7900,
+    "ext_killed_women_cum": 6150,
+    "killed_other_cum": 4155
+  },
+  {
+    "report_date": "2023-12-12",
+    "ext_killed_cum": 18412,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 4212
+  },
+  {
+    "report_date": "2023-12-13",
+    "ext_killed_cum": 18608,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 4408
+  },
+  {
+    "report_date": "2023-12-14",
+    "ext_killed_cum": 18787,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 4587
+  },
+  {
+    "report_date": "2023-12-15",
+    "ext_killed_cum": 18800,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 4600
+  },
+  {
+    "report_date": "2023-12-16",
+    "ext_killed_cum": 19017,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 4817
+  },
+  {
+    "report_date": "2023-12-17",
+    "ext_killed_cum": 19235,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5035
+  },
+  {
+    "report_date": "2023-12-18",
+    "ext_killed_cum": 19453,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5253
+  },
+  {
+    "report_date": "2023-12-19",
+    "ext_killed_cum": 19667,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5467
+  },
+  {
+    "report_date": "2023-12-20",
+    "ext_killed_cum": 19797,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5597
+  },
+  {
+    "report_date": "2023-12-21",
+    "ext_killed_cum": 19927,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5727
+  },
+  {
+    "report_date": "2023-12-22",
+    "ext_killed_cum": 20057,
+    "ext_killed_children_cum": 8000,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5857
+  },
+  {
+    "report_date": "2023-12-23",
+    "ext_killed_cum": 20258,
+    "ext_killed_children_cum": 8200,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 5858
+  },
+  {
+    "report_date": "2023-12-24",
+    "ext_killed_cum": 20424,
+    "ext_killed_children_cum": 8200,
+    "ext_killed_women_cum": 6200,
+    "killed_other_cum": 6024
+  },
+  {
+    "report_date": "2023-12-25",
+    "ext_killed_cum": 20674,
+    "ext_killed_children_cum": 8500,
+    "ext_killed_women_cum": 6300,
+    "killed_other_cum": 5874
+  },
+  {
+    "report_date": "2023-12-26",
+    "ext_killed_cum": 20915,
+    "ext_killed_children_cum": 8500,
+    "ext_killed_women_cum": 6300,
+    "killed_other_cum": 6115
+  },
+  {
+    "report_date": "2023-12-27",
+    "ext_killed_cum": 21110,
+    "ext_killed_children_cum": 8800,
+    "ext_killed_women_cum": 6300,
+    "killed_other_cum": 6010
+  },
+  {
+    "report_date": "2023-12-28",
+    "ext_killed_cum": 21320,
+    "ext_killed_children_cum": 8800,
+    "ext_killed_women_cum": 6300,
+    "killed_other_cum": 6220
+  },
+  {
+    "report_date": "2023-12-29",
+    "ext_killed_cum": 21507,
+    "ext_killed_children_cum": 8800,
+    "ext_killed_women_cum": 6300,
+    "killed_other_cum": 6407
+  },
+  {
+    "report_date": "2023-12-30",
+    "ext_killed_cum": 21672,
+    "ext_killed_children_cum": 9000,
+    "ext_killed_women_cum": 6450,
+    "killed_other_cum": 6222
+  },
+  {
+    "report_date": "2023-12-31",
+    "ext_killed_cum": 21822,
+    "ext_killed_children_cum": 9100,
+    "ext_killed_women_cum": 6500,
+    "killed_other_cum": 6222
+  },
+  {
+    "report_date": "2024-01-01",
+    "ext_killed_cum": 21978,
+    "ext_killed_children_cum": 9280,
+    "ext_killed_women_cum": 6600,
+    "killed_other_cum": 6098
+  },
+  {
+    "report_date": "2024-01-02",
+    "ext_killed_cum": 22185,
+    "ext_killed_children_cum": 9280,
+    "ext_killed_women_cum": 6600,
+    "killed_other_cum": 6305
+  },
+  {
+    "report_date": "2024-01-03",
+    "ext_killed_cum": 22313,
+    "ext_killed_children_cum": 9400,
+    "ext_killed_women_cum": 6700,
+    "killed_other_cum": 6213
+  },
+  {
+    "report_date": "2024-01-04",
+    "ext_killed_cum": 22438,
+    "ext_killed_children_cum": 9730,
+    "ext_killed_women_cum": 6830,
+    "killed_other_cum": 5878
+  },
+  {
+    "report_date": "2024-01-05",
+    "ext_killed_cum": 22600,
+    "ext_killed_children_cum": 9730,
+    "ext_killed_women_cum": 6830,
+    "killed_other_cum": 6040
+  },
+  {
+    "report_date": "2024-01-06",
+    "ext_killed_cum": 22722,
+    "ext_killed_children_cum": 10000,
+    "ext_killed_women_cum": 7000,
+    "killed_other_cum": 5722
+  },
+  {
+    "report_date": "2024-01-07",
+    "ext_killed_cum": 22835,
+    "ext_killed_children_cum": 10000,
+    "ext_killed_women_cum": 7000,
+    "killed_other_cum": 5835
+  },
+  {
+    "report_date": "2024-01-08",
+    "ext_killed_cum": 23084,
+    "ext_killed_children_cum": 10000,
+    "ext_killed_women_cum": 7000,
+    "killed_other_cum": 6084
+  },
+  {
+    "report_date": "2024-01-09",
+    "ext_killed_cum": 23210,
+    "ext_killed_children_cum": 10000,
+    "ext_killed_women_cum": 7000,
+    "killed_other_cum": 6210
+  },
+  {
+    "report_date": "2024-01-10",
+    "ext_killed_cum": 23357,
+    "ext_killed_children_cum": 10000,
+    "ext_killed_women_cum": 7000,
+    "killed_other_cum": 6357
+  },
+  {
+    "report_date": "2024-01-11",
+    "ext_killed_cum": 23469,
+    "ext_killed_children_cum": 10300,
+    "ext_killed_women_cum": 7100,
+    "killed_other_cum": 6069
+  },
+  {
+    "report_date": "2024-01-12",
+    "ext_killed_cum": 23708,
+    "ext_killed_children_cum": 10300,
+    "ext_killed_women_cum": 7100,
+    "killed_other_cum": 6308
+  },
+  {
+    "report_date": "2024-01-13",
+    "ext_killed_cum": 23843,
+    "ext_killed_children_cum": 10400,
+    "ext_killed_women_cum": 7100,
+    "killed_other_cum": 6343
+  },
+  {
+    "report_date": "2024-01-14",
+    "ext_killed_cum": 23968,
+    "ext_killed_children_cum": 10600,
+    "ext_killed_women_cum": 7200,
+    "killed_other_cum": 6168
+  },
+  {
+    "report_date": "2024-01-15",
+    "ext_killed_cum": 24100,
+    "ext_killed_children_cum": 10600,
+    "ext_killed_women_cum": 7200,
+    "killed_other_cum": 6300
+  },
+  {
+    "report_date": "2024-01-16",
+    "ext_killed_cum": 24285,
+    "ext_killed_children_cum": 10600,
+    "ext_killed_women_cum": 7200,
+    "killed_other_cum": 6485
+  },
+  {
+    "report_date": "2024-01-17",
+    "ext_killed_cum": 24448,
+    "ext_killed_children_cum": 10600,
+    "ext_killed_women_cum": 7200,
+    "killed_other_cum": 6648
+  },
+  {
+    "report_date": "2024-01-18",
+    "ext_killed_cum": 24620,
+    "ext_killed_children_cum": 10800,
+    "ext_killed_women_cum": 7250,
+    "killed_other_cum": 6570
+  },
+  {
+    "report_date": "2024-01-19",
+    "ext_killed_cum": 24762,
+    "ext_killed_children_cum": 10800,
+    "ext_killed_women_cum": 7250,
+    "killed_other_cum": 6712
+  },
+  {
+    "report_date": "2024-01-20",
+    "ext_killed_cum": 24927,
+    "ext_killed_children_cum": 10800,
+    "ext_killed_women_cum": 7250,
+    "killed_other_cum": 6877
+  },
+  {
+    "report_date": "2024-01-21",
+    "ext_killed_cum": 25105,
+    "ext_killed_children_cum": 10800,
+    "ext_killed_women_cum": 7250,
+    "killed_other_cum": 7055
+  },
+  {
+    "report_date": "2024-01-22",
+    "ext_killed_cum": 25295,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 6795
+  },
+  {
+    "report_date": "2024-01-23",
+    "ext_killed_cum": 25490,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 6990
+  },
+  {
+    "report_date": "2024-01-24",
+    "ext_killed_cum": 25700,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 7200
+  },
+  {
+    "report_date": "2024-01-25",
+    "ext_killed_cum": 25900,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 7400
+  },
+  {
+    "report_date": "2024-01-26",
+    "ext_killed_cum": 26083,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 7583
+  },
+  {
+    "report_date": "2024-01-27",
+    "ext_killed_cum": 26257,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 7757
+  },
+  {
+    "report_date": "2024-01-28",
+    "ext_killed_cum": 26422,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 7922
+  },
+  {
+    "report_date": "2024-01-29",
+    "ext_killed_cum": 26637,
+    "ext_killed_children_cum": 11000,
+    "ext_killed_women_cum": 7500,
+    "killed_other_cum": 8137
+  },
+  {
+    "report_date": "2024-01-30",
+    "ext_killed_cum": 26751,
+    "ext_killed_children_cum": 11500,
+    "ext_killed_women_cum": 8000,
+    "killed_other_cum": 7251
+  },
+  {
+    "report_date": "2024-01-31",
+    "ext_killed_cum": 26900,
+    "ext_killed_children_cum": 11500,
+    "ext_killed_women_cum": 8000,
+    "killed_other_cum": 7400
+  },
+  {
+    "report_date": "2024-02-01",
+    "ext_killed_cum": 27019,
+    "ext_killed_children_cum": 11500,
+    "ext_killed_women_cum": 8000,
+    "killed_other_cum": 7519
+  },
+  {
+    "report_date": "2024-02-02",
+    "ext_killed_cum": 27131,
+    "ext_killed_children_cum": 11500,
+    "ext_killed_women_cum": 8000,
+    "killed_other_cum": 7631
+  },
+  {
+    "report_date": "2024-02-03",
+    "ext_killed_cum": 27238,
+    "ext_killed_children_cum": 12000,
+    "ext_killed_women_cum": 8190,
+    "killed_other_cum": 7048
+  },
+  {
+    "report_date": "2024-02-04",
+    "ext_killed_cum": 27365,
+    "ext_killed_children_cum": 12000,
+    "ext_killed_women_cum": 8190,
+    "killed_other_cum": 7175
+  },
+  {
+    "report_date": "2024-02-05",
+    "ext_killed_cum": 27478,
+    "ext_killed_children_cum": 12000,
+    "ext_killed_women_cum": 8190,
+    "killed_other_cum": 7288
+  },
+  {
+    "report_date": "2024-02-06",
+    "ext_killed_cum": 27585,
+    "ext_killed_children_cum": 12000,
+    "ext_killed_women_cum": 8190,
+    "killed_other_cum": 7395
+  },
+  {
+    "report_date": "2024-02-07",
+    "ext_killed_cum": 27708,
+    "ext_killed_children_cum": 12000,
+    "ext_killed_women_cum": 8190,
+    "killed_other_cum": 7518
+  },
+  {
+    "report_date": "2024-02-08",
+    "ext_killed_cum": 27840,
+    "ext_killed_children_cum": 12150,
+    "ext_killed_women_cum": 8300,
+    "killed_other_cum": 7390
+  },
+  {
+    "report_date": "2024-02-09",
+    "ext_killed_cum": 27947,
+    "ext_killed_children_cum": 12150,
+    "ext_killed_women_cum": 8300,
+    "killed_other_cum": 7497
+  },
+  {
+    "report_date": "2024-02-10",
+    "ext_killed_cum": 28064,
+    "ext_killed_children_cum": 12150,
+    "ext_killed_women_cum": 8300,
+    "killed_other_cum": 7614
+  },
+  {
+    "report_date": "2024-02-11",
+    "ext_killed_cum": 28176,
+    "ext_killed_children_cum": 12300,
+    "ext_killed_women_cum": 8400,
+    "killed_other_cum": 7476
+  },
+  {
+    "report_date": "2024-02-12",
+    "ext_killed_cum": 28340,
+    "ext_killed_children_cum": 12300,
+    "ext_killed_women_cum": 8400,
+    "killed_other_cum": 7640
+  },
+  {
+    "report_date": "2024-02-13",
+    "ext_killed_cum": 28473,
+    "ext_killed_children_cum": 12300,
+    "ext_killed_women_cum": 8400,
+    "killed_other_cum": 7773
+  },
+  {
+    "report_date": "2024-02-14",
+    "ext_killed_cum": 28576,
+    "ext_killed_children_cum": 12300,
+    "ext_killed_women_cum": 8400,
+    "killed_other_cum": 7876
+  },
+  {
+    "report_date": "2024-02-15",
+    "ext_killed_cum": 28663,
+    "ext_killed_children_cum": 12300,
+    "ext_killed_women_cum": 8400,
+    "killed_other_cum": 7963
+  },
+  {
+    "report_date": "2024-02-16",
+    "ext_killed_cum": 28775,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 7545
+  },
+  {
+    "report_date": "2024-02-17",
+    "ext_killed_cum": 28858,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 7628
+  },
+  {
+    "report_date": "2024-02-18",
+    "ext_killed_cum": 28985,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 7755
+  },
+  {
+    "report_date": "2024-02-19",
+    "ext_killed_cum": 29092,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 7862
+  },
+  {
+    "report_date": "2024-02-20",
+    "ext_killed_cum": 29195,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 7965
+  },
+  {
+    "report_date": "2024-02-21",
+    "ext_killed_cum": 29313,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 8083
+  },
+  {
+    "report_date": "2024-02-22",
+    "ext_killed_cum": 29410,
+    "ext_killed_children_cum": 12660,
+    "ext_killed_women_cum": 8570,
+    "killed_other_cum": 8180
+  },
+  {
+    "report_date": "2024-02-23",
+    "ext_killed_cum": 29514,
+    "ext_killed_children_cum": 13000,
+    "ext_killed_women_cum": 8800,
+    "killed_other_cum": 7714
+  },
+  {
+    "report_date": "2024-02-24",
+    "ext_killed_cum": 29606,
+    "ext_killed_children_cum": 13000,
+    "ext_killed_women_cum": 8800,
+    "killed_other_cum": 7806
+  },
+  {
+    "report_date": "2024-02-25",
+    "ext_killed_cum": 29692,
+    "ext_killed_children_cum": 13000,
+    "ext_killed_women_cum": 8800,
+    "killed_other_cum": 7892
+  },
+  {
+    "report_date": "2024-02-26",
+    "ext_killed_cum": 29782,
+    "ext_killed_children_cum": 13000,
+    "ext_killed_women_cum": 8800,
+    "killed_other_cum": 7982
+  },
+  {
+    "report_date": "2024-02-27",
+    "ext_killed_cum": 29878,
+    "ext_killed_children_cum": 13000,
+    "ext_killed_women_cum": 8800,
+    "killed_other_cum": 8078
+  },
+  {
+    "report_date": "2024-02-28",
+    "ext_killed_cum": 29954,
+    "ext_killed_children_cum": 13000,
+    "ext_killed_women_cum": 8800,
+    "killed_other_cum": 8154
+  },
+  {
+    "report_date": "2024-02-29",
+    "ext_killed_cum": 30035,
+    "ext_killed_children_cum": 13230,
+    "ext_killed_women_cum": 8860,
+    "killed_other_cum": 7945
+  },
+  {
+    "report_date": "2024-03-01",
+    "ext_killed_cum": 30228,
+    "ext_killed_children_cum": 13230,
+    "ext_killed_women_cum": 8860,
+    "killed_other_cum": 8138
+  },
+  {
+    "report_date": "2024-03-02",
+    "ext_killed_cum": 30320,
+    "ext_killed_children_cum": 13230,
+    "ext_killed_women_cum": 8860,
+    "killed_other_cum": 8230
+  },
+  {
+    "report_date": "2024-03-03",
+    "ext_killed_cum": 30410,
+    "ext_killed_children_cum": 13230,
+    "ext_killed_women_cum": 8860,
+    "killed_other_cum": 8320
+  },
+  {
+    "report_date": "2024-03-04",
+    "ext_killed_cum": 30534,
+    "ext_killed_children_cum": 13430,
+    "ext_killed_women_cum": 8900,
+    "killed_other_cum": 8204
+  },
+  {
+    "report_date": "2024-03-05",
+    "ext_killed_cum": 30631,
+    "ext_killed_children_cum": 13430,
+    "ext_killed_women_cum": 8900,
+    "killed_other_cum": 8301
+  },
+  {
+    "report_date": "2024-03-06",
+    "ext_killed_cum": 30717,
+    "ext_killed_children_cum": 13430,
+    "ext_killed_women_cum": 8900,
+    "killed_other_cum": 8387
+  },
+  {
+    "report_date": "2024-03-07",
+    "ext_killed_cum": 30800,
+    "ext_killed_children_cum": 13430,
+    "ext_killed_women_cum": 8900,
+    "killed_other_cum": 8470
+  },
+  {
+    "report_date": "2024-03-08",
+    "ext_killed_cum": 30878,
+    "ext_killed_children_cum": 13430,
+    "ext_killed_women_cum": 8900,
+    "killed_other_cum": 8548
+  },
+  {
+    "report_date": "2024-03-09",
+    "ext_killed_cum": 30960,
+    "ext_killed_children_cum": 13500,
+    "ext_killed_women_cum": 9000,
+    "killed_other_cum": 8460
+  },
+  {
+    "report_date": "2024-03-10",
+    "ext_killed_cum": 31045,
+    "ext_killed_children_cum": 13500,
+    "ext_killed_women_cum": 9000,
+    "killed_other_cum": 8545
+  },
+  {
+    "report_date": "2024-03-11",
+    "ext_killed_cum": 31112,
+    "ext_killed_children_cum": 13500,
+    "ext_killed_women_cum": 9000,
+    "killed_other_cum": 8612
+  },
+  {
+    "report_date": "2024-03-12",
+    "ext_killed_cum": 31184,
+    "ext_killed_children_cum": 13500,
+    "ext_killed_women_cum": 9000,
+    "killed_other_cum": 8684
+  },
+  {
+    "report_date": "2024-03-13",
+    "ext_killed_cum": 31272,
+    "ext_killed_children_cum": 13500,
+    "ext_killed_women_cum": 9000,
+    "killed_other_cum": 8772
+  },
+  {
+    "report_date": "2024-03-14",
+    "ext_killed_cum": 31341,
+    "ext_killed_children_cum": 13790,
+    "ext_killed_women_cum": 9100,
+    "killed_other_cum": 8451
+  },
+  {
+    "report_date": "2024-03-15",
+    "ext_killed_cum": 31490,
+    "ext_killed_children_cum": 13790,
+    "ext_killed_women_cum": 9100,
+    "killed_other_cum": 8600
+  },
+  {
+    "report_date": "2024-03-16",
+    "ext_killed_cum": 31553,
+    "ext_killed_children_cum": 13790,
+    "ext_killed_women_cum": 9100,
+    "killed_other_cum": 8663
+  },
+  {
+    "report_date": "2024-03-17",
+    "ext_killed_cum": 31645,
+    "ext_killed_children_cum": 13790,
+    "ext_killed_women_cum": 9100,
+    "killed_other_cum": 8755
+  },
+  {
+    "report_date": "2024-03-18",
+    "ext_killed_cum": 31726,
+    "ext_killed_children_cum": 13790,
+    "ext_killed_women_cum": 9100,
+    "killed_other_cum": 8836
+  },
+  {
+    "report_date": "2024-03-19",
+    "ext_killed_cum": 31819,
+    "ext_killed_children_cum": 14000,
+    "ext_killed_women_cum": 9220,
+    "killed_other_cum": 8599
+  },
+  {
+    "report_date": "2024-03-20",
+    "ext_killed_cum": 31923,
+    "ext_killed_children_cum": 14000,
+    "ext_killed_women_cum": 9220,
+    "killed_other_cum": 8703
+  },
+  {
+    "report_date": "2024-03-21",
+    "ext_killed_cum": 31988,
+    "ext_killed_children_cum": 14000,
+    "ext_killed_women_cum": 9220,
+    "killed_other_cum": 8768
+  },
+  {
+    "report_date": "2024-03-22",
+    "ext_killed_cum": 32070,
+    "ext_killed_children_cum": 14000,
+    "ext_killed_women_cum": 9220,
+    "killed_other_cum": 8850
+  },
+  {
+    "report_date": "2024-03-23",
+    "ext_killed_cum": 32142,
+    "ext_killed_children_cum": 14000,
+    "ext_killed_women_cum": 9220,
+    "killed_other_cum": 8922
+  },
+  {
+    "report_date": "2024-03-24",
+    "ext_killed_cum": 32226,
+    "ext_killed_children_cum": 14280,
+    "ext_killed_women_cum": 9340,
+    "killed_other_cum": 8606
+  },
+  {
+    "report_date": "2024-03-25",
+    "ext_killed_cum": 32333,
+    "ext_killed_children_cum": 14280,
+    "ext_killed_women_cum": 9340,
+    "killed_other_cum": 8713
+  },
+  {
+    "report_date": "2024-03-26",
+    "ext_killed_cum": 32414,
+    "ext_killed_children_cum": 14280,
+    "ext_killed_women_cum": 9340,
+    "killed_other_cum": 8794
+  },
+  {
+    "report_date": "2024-03-27",
+    "ext_killed_cum": 32490,
+    "ext_killed_children_cum": 14280,
+    "ext_killed_women_cum": 9340,
+    "killed_other_cum": 8870
+  },
+  {
+    "report_date": "2024-03-28",
+    "ext_killed_cum": 32552,
+    "ext_killed_children_cum": 14280,
+    "ext_killed_women_cum": 9340,
+    "killed_other_cum": 8932
+  },
+  {
+    "report_date": "2024-03-29",
+    "ext_killed_cum": 32623,
+    "ext_killed_children_cum": 14350,
+    "ext_killed_women_cum": 9460,
+    "killed_other_cum": 8813
+  },
+  {
+    "report_date": "2024-03-30",
+    "ext_killed_cum": 32705,
+    "ext_killed_children_cum": 14350,
+    "ext_killed_women_cum": 9460,
+    "killed_other_cum": 8895
+  },
+  {
+    "report_date": "2024-03-31",
+    "ext_killed_cum": 32782,
+    "ext_killed_children_cum": 14350,
+    "ext_killed_women_cum": 9460,
+    "killed_other_cum": 8972
+  },
+  {
+    "report_date": "2024-04-01",
+    "ext_killed_cum": 32845,
+    "ext_killed_children_cum": 14350,
+    "ext_killed_women_cum": 9460,
+    "killed_other_cum": 9035
+  },
+  {
+    "report_date": "2024-04-02",
+    "ext_killed_cum": 32916,
+    "ext_killed_children_cum": 14350,
+    "ext_killed_women_cum": 9460,
+    "killed_other_cum": 9106
+  },
+  {
+    "report_date": "2024-04-03",
+    "ext_killed_cum": 32975,
+    "ext_killed_children_cum": 14500,
+    "ext_killed_women_cum": 9560,
+    "killed_other_cum": 8915
+  },
+  {
+    "report_date": "2024-04-04",
+    "ext_killed_cum": 33037,
+    "ext_killed_children_cum": 14500,
+    "ext_killed_women_cum": 9560,
+    "killed_other_cum": 8977
+  },
+  {
+    "report_date": "2024-04-05",
+    "ext_killed_cum": 33091,
+    "ext_killed_children_cum": 14500,
+    "ext_killed_women_cum": 9560,
+    "killed_other_cum": 9031
+  },
+  {
+    "report_date": "2024-04-06",
+    "ext_killed_cum": 33137,
+    "ext_killed_children_cum": 14500,
+    "ext_killed_women_cum": 9560,
+    "killed_other_cum": 9077
+  },
+  {
+    "report_date": "2024-04-07",
+    "ext_killed_cum": 33175,
+    "ext_killed_children_cum": 14500,
+    "ext_killed_women_cum": 9560,
+    "killed_other_cum": 9115
+  },
+  {
+    "report_date": "2024-04-08",
+    "ext_killed_cum": 33207,
+    "ext_killed_children_cum": 14520,
+    "ext_killed_women_cum": 9568,
+    "killed_other_cum": 9119
+  },
+  {
+    "report_date": "2024-04-09",
+    "ext_killed_cum": 33360,
+    "ext_killed_children_cum": 14520,
+    "ext_killed_women_cum": 9568,
+    "killed_other_cum": 9272
+  },
+  {
+    "report_date": "2024-04-10",
+    "ext_killed_cum": 33482,
+    "ext_killed_children_cum": 14520,
+    "ext_killed_women_cum": 9568,
+    "killed_other_cum": 9394
+  },
+  {
+    "report_date": "2024-04-11",
+    "ext_killed_cum": 33545,
+    "ext_killed_children_cum": 14520,
+    "ext_killed_women_cum": 9568,
+    "killed_other_cum": 9457
+  },
+  {
+    "report_date": "2024-04-12",
+    "ext_killed_cum": 33634,
+    "ext_killed_children_cum": 14520,
+    "ext_killed_women_cum": 9568,
+    "killed_other_cum": 9546
+  },
+  {
+    "report_date": "2024-04-13",
+    "ext_killed_cum": 33686,
+    "ext_killed_children_cum": 14560,
+    "ext_killed_women_cum": 9582,
+    "killed_other_cum": 9544
+  },
+  {
+    "report_date": "2024-04-14",
+    "ext_killed_cum": 33729,
+    "ext_killed_children_cum": 14560,
+    "ext_killed_women_cum": 9582,
+    "killed_other_cum": 9587
+  },
+  {
+    "report_date": "2024-04-15",
+    "ext_killed_cum": 33797,
+    "ext_killed_children_cum": 14560,
+    "ext_killed_women_cum": 9582,
+    "killed_other_cum": 9655
+  },
+  {
+    "report_date": "2024-04-16",
+    "ext_killed_cum": 33843,
+    "ext_killed_children_cum": 14560,
+    "ext_killed_women_cum": 9582,
+    "killed_other_cum": 9701
+  },
+  {
+    "report_date": "2024-04-17",
+    "ext_killed_cum": 33899,
+    "ext_killed_children_cum": 14560,
+    "ext_killed_women_cum": 9582,
+    "killed_other_cum": 9757
+  },
+  {
+    "report_date": "2024-04-18",
+    "ext_killed_cum": 33970,
+    "ext_killed_children_cum": 14685,
+    "ext_killed_women_cum": 9670,
+    "killed_other_cum": 9615
+  },
+  {
+    "report_date": "2024-04-19",
+    "ext_killed_cum": 34012,
+    "ext_killed_children_cum": 14685,
+    "ext_killed_women_cum": 9670,
+    "killed_other_cum": 9657
+  },
+  {
+    "report_date": "2024-04-20",
+    "ext_killed_cum": 34049,
+    "ext_killed_children_cum": 14685,
+    "ext_killed_women_cum": 9670,
+    "killed_other_cum": 9694
+  },
+  {
+    "report_date": "2024-04-21",
+    "ext_killed_cum": 34097,
+    "ext_killed_children_cum": 14685,
+    "ext_killed_women_cum": 9670,
+    "killed_other_cum": 9742
+  },
+  {
+    "report_date": "2024-04-22",
+    "ext_killed_cum": 34151,
+    "ext_killed_children_cum": 14685,
+    "ext_killed_women_cum": 9670,
+    "killed_other_cum": 9796
+  },
+  {
+    "report_date": "2024-04-23",
+    "ext_killed_cum": 34183,
+    "ext_killed_children_cum": 14778,
+    "ext_killed_women_cum": 9752,
+    "killed_other_cum": 9653
+  },
+  {
+    "report_date": "2024-04-24",
+    "ext_killed_cum": 34262,
+    "ext_killed_children_cum": 14778,
+    "ext_killed_women_cum": 9752,
+    "killed_other_cum": 9732
+  },
+  {
+    "report_date": "2024-04-25",
+    "ext_killed_cum": 34305,
+    "ext_killed_children_cum": 14778,
+    "ext_killed_women_cum": 9752,
+    "killed_other_cum": 9775
+  },
+  {
+    "report_date": "2024-04-26",
+    "ext_killed_cum": 34356,
+    "ext_killed_children_cum": 14778,
+    "ext_killed_women_cum": 9752,
+    "killed_other_cum": 9826
+  },
+  {
+    "report_date": "2024-04-27",
+    "ext_killed_cum": 34388,
+    "ext_killed_children_cum": 14778,
+    "ext_killed_women_cum": 9752,
+    "killed_other_cum": 9858
+  },
+  {
+    "report_date": "2024-04-28",
+    "ext_killed_cum": 34454,
+    "ext_killed_children_cum": 14873,
+    "ext_killed_women_cum": 9801,
+    "killed_other_cum": 9780
+  },
+  {
+    "report_date": "2024-04-29",
+    "ext_killed_cum": 34488,
+    "ext_killed_children_cum": 14873,
+    "ext_killed_women_cum": 9801,
+    "killed_other_cum": 9814
+  },
+  {
+    "report_date": "2024-04-30",
+    "ext_killed_cum": 34535,
+    "ext_killed_children_cum": 14873,
+    "ext_killed_women_cum": 9801,
+    "killed_other_cum": 9861
+  },
+  {
+    "report_date": "2024-05-01",
+    "ext_killed_cum": 34568,
+    "ext_killed_children_cum": 14873,
+    "ext_killed_women_cum": 9801,
+    "killed_other_cum": 9894
+  },
+  {
+    "report_date": "2024-05-02",
+    "ext_killed_cum": 34596,
+    "ext_killed_children_cum": 14873,
+    "ext_killed_women_cum": 9801,
+    "killed_other_cum": 9922
+  },
+  {
+    "report_date": "2024-05-03",
+    "ext_killed_cum": 34622,
+    "ext_killed_children_cum": 14944,
+    "ext_killed_women_cum": 9849,
+    "killed_other_cum": 9829
+  },
+  {
+    "report_date": "2024-05-04",
+    "ext_killed_cum": 34654,
+    "ext_killed_children_cum": 14944,
+    "ext_killed_women_cum": 9849,
+    "killed_other_cum": 9861
+  },
+  {
+    "report_date": "2024-05-05",
+    "ext_killed_cum": 34683,
+    "ext_killed_children_cum": 14944,
+    "ext_killed_women_cum": 9849,
+    "killed_other_cum": 9890
+  },
+  {
+    "report_date": "2024-05-06",
+    "ext_killed_cum": 34735,
+    "ext_killed_children_cum": 14944,
+    "ext_killed_women_cum": 9849,
+    "killed_other_cum": 9942
+  },
+  {
+    "report_date": "2024-05-07",
+    "ext_killed_cum": 34789,
+    "ext_killed_children_cum": 14944,
+    "ext_killed_women_cum": 9849,
+    "killed_other_cum": 9996
+  },
+  {
+    "report_date": "2024-05-08",
+    "ext_killed_cum": 34844,
+    "ext_killed_children_cum": 15002,
+    "ext_killed_women_cum": 9893,
+    "killed_other_cum": 9949
+  },
+  {
+    "report_date": "2024-05-09",
+    "ext_killed_cum": 34904,
+    "ext_killed_children_cum": 15002,
+    "ext_killed_women_cum": 9893,
+    "killed_other_cum": 10009
+  },
+  {
+    "report_date": "2024-05-10",
+    "ext_killed_cum": 34943,
+    "ext_killed_children_cum": 15002,
+    "ext_killed_women_cum": 9893,
+    "killed_other_cum": 10048
+  },
+  {
+    "report_date": "2024-05-11",
+    "ext_killed_cum": 34971,
+    "ext_killed_children_cum": 15002,
+    "ext_killed_women_cum": 9893,
+    "killed_other_cum": 10076
+  },
+  {
+    "report_date": "2024-05-12",
+    "ext_killed_cum": 35034,
+    "ext_killed_children_cum": 15002,
+    "ext_killed_women_cum": 9893,
+    "killed_other_cum": 10139
+  },
+  {
+    "report_date": "2024-05-13",
+    "ext_killed_cum": 35091,
+    "ext_killed_children_cum": 15103,
+    "ext_killed_women_cum": 9961,
+    "killed_other_cum": 10027
+  },
+  {
+    "report_date": "2024-05-14",
+    "ext_killed_cum": 35173,
+    "ext_killed_children_cum": 15103,
+    "ext_killed_women_cum": 9961,
+    "killed_other_cum": 10109
+  },
+  {
+    "report_date": "2024-05-15",
+    "ext_killed_cum": 35233,
+    "ext_killed_children_cum": 15103,
+    "ext_killed_women_cum": 9961,
+    "killed_other_cum": 10169
+  },
+  {
+    "report_date": "2024-05-16",
+    "ext_killed_cum": 35272,
+    "ext_killed_children_cum": 15103,
+    "ext_killed_women_cum": 9961,
+    "killed_other_cum": 10208
+  },
+  {
+    "report_date": "2024-05-17",
+    "ext_killed_cum": 35303,
+    "ext_killed_children_cum": 15103,
+    "ext_killed_women_cum": 9961,
+    "killed_other_cum": 10239
+  },
+  {
+    "report_date": "2024-05-18",
+    "ext_killed_cum": 35386,
+    "ext_killed_children_cum": 15162,
+    "ext_killed_women_cum": 10018,
+    "killed_other_cum": 10206
+  },
+  {
+    "report_date": "2024-05-19",
+    "ext_killed_cum": 35456,
+    "ext_killed_children_cum": 15162,
+    "ext_killed_women_cum": 10018,
+    "killed_other_cum": 10276
+  },
+  {
+    "report_date": "2024-05-20",
+    "ext_killed_cum": 35562,
+    "ext_killed_children_cum": 15162,
+    "ext_killed_women_cum": 10018,
+    "killed_other_cum": 10382
+  },
+  {
+    "report_date": "2024-05-21",
+    "ext_killed_cum": 35647,
+    "ext_killed_children_cum": 15162,
+    "ext_killed_women_cum": 10018,
+    "killed_other_cum": 10467
+  },
+  {
+    "report_date": "2024-05-22",
+    "ext_killed_cum": 35709,
+    "ext_killed_children_cum": 15162,
+    "ext_killed_women_cum": 10018,
+    "killed_other_cum": 10529
+  },
+  {
+    "report_date": "2024-05-23",
+    "ext_killed_cum": 35800,
+    "ext_killed_children_cum": 15239,
+    "ext_killed_women_cum": 10093,
+    "killed_other_cum": 10468
+  },
+  {
+    "report_date": "2024-05-24",
+    "ext_killed_cum": 35857,
+    "ext_killed_children_cum": 15239,
+    "ext_killed_women_cum": 10093,
+    "killed_other_cum": 10525
+  },
+  {
+    "report_date": "2024-05-25",
+    "ext_killed_cum": 35903,
+    "ext_killed_children_cum": 15239,
+    "ext_killed_women_cum": 10093,
+    "killed_other_cum": 10571
+  },
+  {
+    "report_date": "2024-05-26",
+    "ext_killed_cum": 35984,
+    "ext_killed_children_cum": 15239,
+    "ext_killed_women_cum": 10093,
+    "killed_other_cum": 10652
+  },
+  {
+    "report_date": "2024-05-27",
+    "ext_killed_cum": 36050,
+    "ext_killed_children_cum": 15239,
+    "ext_killed_women_cum": 10093,
+    "killed_other_cum": 10718
+  },
+  {
+    "report_date": "2024-05-28",
+    "ext_killed_cum": 36096,
+    "ext_killed_children_cum": 15328,
+    "ext_killed_women_cum": 10171,
+    "killed_other_cum": 10597
+  },
+  {
+    "report_date": "2024-05-29",
+    "ext_killed_cum": 36171,
+    "ext_killed_children_cum": 15328,
+    "ext_killed_women_cum": 10171,
+    "killed_other_cum": 10672
+  },
+  {
+    "report_date": "2024-05-30",
+    "ext_killed_cum": 36224,
+    "ext_killed_children_cum": 15328,
+    "ext_killed_women_cum": 10171,
+    "killed_other_cum": 10725
+  },
+  {
+    "report_date": "2024-05-31",
+    "ext_killed_cum": 36284,
+    "ext_killed_children_cum": 15328,
+    "ext_killed_women_cum": 10171,
+    "killed_other_cum": 10785
+  },
+  {
+    "report_date": "2024-06-01",
+    "ext_killed_cum": 36379,
+    "ext_killed_children_cum": 15328,
+    "ext_killed_women_cum": 10171,
+    "killed_other_cum": 10880
+  },
+  {
+    "report_date": "2024-06-02",
+    "ext_killed_cum": 36439,
+    "ext_killed_children_cum": 15348,
+    "ext_killed_women_cum": 10231,
+    "killed_other_cum": 10860
+  },
+  {
+    "report_date": "2024-06-03",
+    "ext_killed_cum": 36479,
+    "ext_killed_children_cum": 15348,
+    "ext_killed_women_cum": 10231,
+    "killed_other_cum": 10900
+  },
+  {
+    "report_date": "2024-06-04",
+    "ext_killed_cum": 36550,
+    "ext_killed_children_cum": 15348,
+    "ext_killed_women_cum": 10231,
+    "killed_other_cum": 10971
+  },
+  {
+    "report_date": "2024-06-05",
+    "ext_killed_cum": 36586,
+    "ext_killed_children_cum": 15348,
+    "ext_killed_women_cum": 10231,
+    "killed_other_cum": 11007
+  },
+  {
+    "report_date": "2024-06-06",
+    "ext_killed_cum": 36654,
+    "ext_killed_children_cum": 15348,
+    "ext_killed_women_cum": 10231,
+    "killed_other_cum": 11075
+  },
+  {
+    "report_date": "2024-06-07",
+    "ext_killed_cum": 36731,
+    "ext_killed_children_cum": 15517,
+    "ext_killed_women_cum": 10279,
+    "killed_other_cum": 10935
+  },
+  {
+    "report_date": "2024-06-08",
+    "ext_killed_cum": 36801,
+    "ext_killed_children_cum": 15517,
+    "ext_killed_women_cum": 10279,
+    "killed_other_cum": 11005
+  },
+  {
+    "report_date": "2024-06-09",
+    "ext_killed_cum": 37084,
+    "ext_killed_children_cum": 15517,
+    "ext_killed_women_cum": 10279,
+    "killed_other_cum": 11288
+  },
+  {
+    "report_date": "2024-06-10",
+    "ext_killed_cum": 37124,
+    "ext_killed_children_cum": 15517,
+    "ext_killed_women_cum": 10279,
+    "killed_other_cum": 11328
+  },
+  {
+    "report_date": "2024-06-11",
+    "ext_killed_cum": 37164,
+    "ext_killed_children_cum": 15517,
+    "ext_killed_women_cum": 10279,
+    "killed_other_cum": 11368
+  },
+  {
+    "report_date": "2024-06-12",
+    "ext_killed_cum": 37202,
+    "ext_killed_children_cum": 15694,
+    "ext_killed_women_cum": 10367,
+    "killed_other_cum": 11141
+  },
+  {
+    "report_date": "2024-06-13",
+    "ext_killed_cum": 37232,
+    "ext_killed_children_cum": 15694,
+    "ext_killed_women_cum": 10367,
+    "killed_other_cum": 11171
+  },
+  {
+    "report_date": "2024-06-14",
+    "ext_killed_cum": 37266,
+    "ext_killed_children_cum": 15694,
+    "ext_killed_women_cum": 10367,
+    "killed_other_cum": 11205
+  },
+  {
+    "report_date": "2024-06-15",
+    "ext_killed_cum": 37296,
+    "ext_killed_children_cum": 15694,
+    "ext_killed_women_cum": 10367,
+    "killed_other_cum": 11235
+  },
+  {
+    "report_date": "2024-06-16",
+    "ext_killed_cum": 37337,
+    "ext_killed_children_cum": 15694,
+    "ext_killed_women_cum": 10367,
+    "killed_other_cum": 11276
+  },
+  {
+    "report_date": "2024-06-17",
+    "ext_killed_cum": 37347,
+    "ext_killed_children_cum": 15747,
+    "ext_killed_women_cum": 10406,
+    "killed_other_cum": 11194
+  },
+  {
+    "report_date": "2024-06-18",
+    "ext_killed_cum": 37372,
+    "ext_killed_children_cum": 15747,
+    "ext_killed_women_cum": 10406,
+    "killed_other_cum": 11219
+  },
+  {
+    "report_date": "2024-06-19",
+    "ext_killed_cum": 37396,
+    "ext_killed_children_cum": 15747,
+    "ext_killed_women_cum": 10406,
+    "killed_other_cum": 11243
+  },
+  {
+    "report_date": "2024-06-20",
+    "ext_killed_cum": 37431,
+    "ext_killed_children_cum": 15747,
+    "ext_killed_women_cum": 10406,
+    "killed_other_cum": 11278
+  },
+  {
+    "report_date": "2024-06-21",
+    "ext_killed_cum": 37450,
+    "ext_killed_children_cum": 15747,
+    "ext_killed_women_cum": 10406,
+    "killed_other_cum": 11297
+  },
+  {
+    "report_date": "2024-06-22",
+    "ext_killed_cum": 37551,
+    "ext_killed_children_cum": 15821,
+    "ext_killed_women_cum": 10475,
+    "killed_other_cum": 11255
+  },
+  {
+    "report_date": "2024-06-23",
+    "ext_killed_cum": 37598,
+    "ext_killed_children_cum": 15821,
+    "ext_killed_women_cum": 10475,
+    "killed_other_cum": 11302
+  },
+  {
+    "report_date": "2024-06-24",
+    "ext_killed_cum": 37626,
+    "ext_killed_children_cum": 15821,
+    "ext_killed_women_cum": 10475,
+    "killed_other_cum": 11330
+  },
+  {
+    "report_date": "2024-06-25",
+    "ext_killed_cum": 37658,
+    "ext_killed_children_cum": 15821,
+    "ext_killed_women_cum": 10475,
+    "killed_other_cum": 11362
+  },
+  {
+    "report_date": "2024-06-26",
+    "ext_killed_cum": 37718,
+    "ext_killed_children_cum": 15821,
+    "ext_killed_women_cum": 10475,
+    "killed_other_cum": 11422
+  },
+  {
+    "report_date": "2024-06-27",
+    "ext_killed_cum": 37765,
+    "ext_killed_children_cum": 15882,
+    "ext_killed_women_cum": 10538,
+    "killed_other_cum": 11345
+  },
+  {
+    "report_date": "2024-06-28",
+    "ext_killed_cum": 37794,
+    "ext_killed_children_cum": 15882,
+    "ext_killed_women_cum": 10538,
+    "killed_other_cum": 11374
+  },
+  {
+    "report_date": "2024-06-29",
+    "ext_killed_cum": 37834,
+    "ext_killed_children_cum": 15882,
+    "ext_killed_women_cum": 10538,
+    "killed_other_cum": 11414
+  },
+  {
+    "report_date": "2024-06-30",
+    "ext_killed_cum": 37877,
+    "ext_killed_children_cum": 15882,
+    "ext_killed_women_cum": 10538,
+    "killed_other_cum": 11457
+  },
+  {
+    "report_date": "2024-07-01",
+    "ext_killed_cum": 37900,
+    "ext_killed_children_cum": 15882,
+    "ext_killed_women_cum": 10538,
+    "killed_other_cum": 11480
+  },
+  {
+    "report_date": "2024-07-02",
+    "ext_killed_cum": 37925,
+    "ext_killed_children_cum": 15919,
+    "ext_killed_women_cum": 10569,
+    "killed_other_cum": 11437
+  },
+  {
+    "report_date": "2024-07-03",
+    "ext_killed_cum": 37953,
+    "ext_killed_children_cum": 15919,
+    "ext_killed_women_cum": 10569,
+    "killed_other_cum": 11465
+  },
+  {
+    "report_date": "2024-07-04",
+    "ext_killed_cum": 38011,
+    "ext_killed_children_cum": 15919,
+    "ext_killed_women_cum": 10569,
+    "killed_other_cum": 11523
+  },
+  {
+    "report_date": "2024-07-05",
+    "ext_killed_cum": 38069,
+    "ext_killed_children_cum": 15919,
+    "ext_killed_women_cum": 10569,
+    "killed_other_cum": 11581
+  },
+  {
+    "report_date": "2024-07-06",
+    "ext_killed_cum": 38098,
+    "ext_killed_children_cum": 15919,
+    "ext_killed_women_cum": 10569,
+    "killed_other_cum": 11610
+  },
+  {
+    "report_date": "2024-07-07",
+    "ext_killed_cum": 38153,
+    "ext_killed_children_cum": 15983,
+    "ext_killed_women_cum": 10637,
+    "killed_other_cum": 11533
+  },
+  {
+    "report_date": "2024-07-08",
+    "ext_killed_cum": 38193,
+    "ext_killed_children_cum": 15983,
+    "ext_killed_women_cum": 10637,
+    "killed_other_cum": 11573
+  },
+  {
+    "report_date": "2024-07-09",
+    "ext_killed_cum": 38243,
+    "ext_killed_children_cum": 15983,
+    "ext_killed_women_cum": 10637,
+    "killed_other_cum": 11623
+  },
+  {
+    "report_date": "2024-07-10",
+    "ext_killed_cum": 38295,
+    "ext_killed_children_cum": 15983,
+    "ext_killed_women_cum": 10637,
+    "killed_other_cum": 11675
+  },
+  {
+    "report_date": "2024-07-11",
+    "ext_killed_cum": 38345,
+    "ext_killed_children_cum": 16054,
+    "ext_killed_women_cum": 10700,
+    "killed_other_cum": 11591
+  },
+  {
+    "report_date": "2024-07-12",
+    "ext_killed_cum": 38382,
+    "ext_killed_children_cum": 16054,
+    "ext_killed_women_cum": 10700,
+    "killed_other_cum": 11628
+  },
+  {
+    "report_date": "2024-07-13",
+    "ext_killed_cum": 38443,
+    "ext_killed_children_cum": 16054,
+    "ext_killed_women_cum": 10700,
+    "killed_other_cum": 11689
+  },
+  {
+    "report_date": "2024-07-14",
+    "ext_killed_cum": 38584,
+    "ext_killed_children_cum": 16054,
+    "ext_killed_women_cum": 10700,
+    "killed_other_cum": 11830
+  },
+  {
+    "report_date": "2024-07-15",
+    "ext_killed_cum": 38664,
+    "ext_killed_children_cum": 16054,
+    "ext_killed_women_cum": 10700,
+    "killed_other_cum": 11910
+  },
+  {
+    "report_date": "2024-07-16",
+    "ext_killed_cum": 38713,
+    "ext_killed_children_cum": 16054,
+    "ext_killed_women_cum": 10700,
+    "killed_other_cum": 11959
+  },
+  {
+    "report_date": "2024-07-17",
+    "ext_killed_cum": 38794,
+    "ext_killed_children_cum": 16172,
+    "ext_killed_women_cum": 10798,
+    "killed_other_cum": 11824
+  },
+  {
+    "report_date": "2024-07-18",
+    "ext_killed_cum": 38848,
+    "ext_killed_children_cum": 16172,
+    "ext_killed_women_cum": 10798,
+    "killed_other_cum": 11878
+  },
+  {
+    "report_date": "2024-07-19",
+    "ext_killed_cum": 38882,
+    "ext_killed_children_cum": 16172,
+    "ext_killed_women_cum": 10798,
+    "killed_other_cum": 11912
+  },
+  {
+    "report_date": "2024-07-20",
+    "ext_killed_cum": 38919,
+    "ext_killed_children_cum": 16172,
+    "ext_killed_women_cum": 10798,
+    "killed_other_cum": 11949
+  },
+  {
+    "report_date": "2024-07-21",
+    "ext_killed_cum": 38983,
+    "ext_killed_children_cum": 16172,
+    "ext_killed_women_cum": 10798,
+    "killed_other_cum": 12013
+  },
+  {
+    "report_date": "2024-07-22",
+    "ext_killed_cum": 39006,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10859,
+    "killed_other_cum": 11896
+  },
+  {
+    "report_date": "2024-07-23",
+    "ext_killed_cum": 39090,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10859,
+    "killed_other_cum": 11980
+  },
+  {
+    "report_date": "2024-07-24",
+    "ext_killed_cum": 39145,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10859,
+    "killed_other_cum": 12035
+  },
+  {
+    "report_date": "2024-07-25",
+    "ext_killed_cum": 39175,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10859,
+    "killed_other_cum": 12065
+  },
+  {
+    "report_date": "2024-07-26",
+    "ext_killed_cum": 39217,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10859,
+    "killed_other_cum": 12107
+  },
+  {
+    "report_date": "2024-07-27",
+    "ext_killed_cum": 39258,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10921,
+    "killed_other_cum": 12086
+  },
+  {
+    "report_date": "2024-07-28",
+    "ext_killed_cum": 39324,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10921,
+    "killed_other_cum": 12152
+  },
+  {
+    "report_date": "2024-07-29",
+    "ext_killed_cum": 39363,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10921,
+    "killed_other_cum": 12191
+  },
+  {
+    "report_date": "2024-07-30",
+    "ext_killed_cum": 39400,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10921,
+    "killed_other_cum": 12228
+  },
+  {
+    "report_date": "2024-07-31",
+    "ext_killed_cum": 39445,
+    "ext_killed_children_cum": 16251,
+    "ext_killed_women_cum": 10921,
+    "killed_other_cum": 12273
+  },
+  {
+    "report_date": "2024-08-01",
+    "ext_killed_cum": 39480,
+    "ext_killed_children_cum": 16314,
+    "ext_killed_women_cum": 10980,
+    "killed_other_cum": 12186
+  },
+  {
+    "report_date": "2024-08-02",
+    "ext_killed_cum": 39519,
+    "ext_killed_children_cum": 16314,
+    "ext_killed_women_cum": 10980,
+    "killed_other_cum": 12225
+  },
+  {
+    "report_date": "2024-08-03",
+    "ext_killed_cum": 39550,
+    "ext_killed_children_cum": 16314,
+    "ext_killed_women_cum": 10980,
+    "killed_other_cum": 12256
+  },
+  {
+    "report_date": "2024-08-04",
+    "ext_killed_cum": 39583,
+    "ext_killed_children_cum": 16314,
+    "ext_killed_women_cum": 10980,
+    "killed_other_cum": 12289
+  },
+  {
+    "report_date": "2024-08-05",
+    "ext_killed_cum": 39623,
+    "ext_killed_children_cum": 16314,
+    "ext_killed_women_cum": 10980,
+    "killed_other_cum": 12329
+  },
+  {
+    "report_date": "2024-08-06",
+    "ext_killed_cum": 39653,
+    "ext_killed_children_cum": 16365,
+    "ext_killed_women_cum": 11012,
+    "killed_other_cum": 12276
+  },
+  {
+    "report_date": "2024-08-07",
+    "ext_killed_cum": 39677,
+    "ext_killed_children_cum": 16365,
+    "ext_killed_women_cum": 11012,
+    "killed_other_cum": 12300
+  },
+  {
+    "report_date": "2024-08-08",
+    "ext_killed_cum": 39699,
+    "ext_killed_children_cum": 16365,
+    "ext_killed_women_cum": 11012,
+    "killed_other_cum": 12322
+  },
+  {
+    "report_date": "2024-08-09",
+    "ext_killed_cum": 39750,
+    "ext_killed_children_cum": 16365,
+    "ext_killed_women_cum": 11012,
+    "killed_other_cum": 12373
+  },
+  {
+    "report_date": "2024-08-10",
+    "ext_killed_cum": 39790,
+    "ext_killed_children_cum": 16365,
+    "ext_killed_women_cum": 11012,
+    "killed_other_cum": 12413
+  },
+  {
+    "report_date": "2024-08-11",
+    "ext_killed_cum": 39790,
+    "ext_killed_children_cum": 16365,
+    "ext_killed_women_cum": 11012,
+    "killed_other_cum": 12413
+  },
+  {
+    "report_date": "2024-08-12",
+    "ext_killed_cum": 39897,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12353
+  },
+  {
+    "report_date": "2024-08-13",
+    "ext_killed_cum": 39929,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12385
+  },
+  {
+    "report_date": "2024-08-14",
+    "ext_killed_cum": 39965,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12421
+  },
+  {
+    "report_date": "2024-08-15",
+    "ext_killed_cum": 40005,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12461
+  },
+  {
+    "report_date": "2024-08-16",
+    "ext_killed_cum": 40005,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12461
+  },
+  {
+    "report_date": "2024-08-17",
+    "ext_killed_cum": 40074,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12530
+  },
+  {
+    "report_date": "2024-08-18",
+    "ext_killed_cum": 40099,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12555
+  },
+  {
+    "report_date": "2024-08-19",
+    "ext_killed_cum": 40139,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12595
+  },
+  {
+    "report_date": "2024-08-20",
+    "ext_killed_cum": 40173,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12629
+  },
+  {
+    "report_date": "2024-08-21",
+    "ext_killed_cum": 40223,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12679
+  },
+  {
+    "report_date": "2024-08-22",
+    "ext_killed_cum": 40265,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12721
+  },
+  {
+    "report_date": "2024-08-23",
+    "ext_killed_cum": 40265,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12721
+  },
+  {
+    "report_date": "2024-08-24",
+    "ext_killed_cum": 40334,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12790
+  },
+  {
+    "report_date": "2024-08-25",
+    "ext_killed_cum": 40405,
+    "ext_killed_children_cum": 16456,
+    "ext_killed_women_cum": 11088,
+    "killed_other_cum": 12861
+  },
+  {
+    "report_date": "2024-08-26",
+    "ext_killed_cum": 40435,
+    "ext_killed_children_cum": 16589,
+    "ext_killed_women_cum": 11207,
+    "killed_other_cum": 12639
+  },
+  {
+    "report_date": "2024-08-27",
+    "ext_killed_cum": 40476,
+    "ext_killed_children_cum": 16589,
+    "ext_killed_women_cum": 11207,
+    "killed_other_cum": 12680
+  },
+  {
+    "report_date": "2024-08-28",
+    "ext_killed_cum": 40534,
+    "ext_killed_children_cum": 16589,
+    "ext_killed_women_cum": 11207,
+    "killed_other_cum": 12738
+  },
+  {
+    "report_date": "2024-08-29",
+    "ext_killed_cum": 40602,
+    "ext_killed_children_cum": 16589,
+    "ext_killed_women_cum": 11207,
+    "killed_other_cum": 12806
+  },
+  {
+    "report_date": "2024-08-30",
+    "ext_killed_cum": 40602,
+    "ext_killed_children_cum": 16589,
+    "ext_killed_women_cum": 11207,
+    "killed_other_cum": 12806
+  },
+  {
+    "report_date": "2024-08-31",
+    "ext_killed_cum": 40691,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12749
+  },
+  {
+    "report_date": "2024-09-01",
+    "ext_killed_cum": 40738,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12796
+  },
+  {
+    "report_date": "2024-09-02",
+    "ext_killed_cum": 40786,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12844
+  },
+  {
+    "report_date": "2024-09-03",
+    "ext_killed_cum": 40819,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12877
+  },
+  {
+    "report_date": "2024-09-04",
+    "ext_killed_cum": 40861,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12919
+  },
+  {
+    "report_date": "2024-09-05",
+    "ext_killed_cum": 40878,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12936
+  },
+  {
+    "report_date": "2024-09-06",
+    "ext_killed_cum": 40878,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12936
+  },
+  {
+    "report_date": "2024-09-07",
+    "ext_killed_cum": 40939,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 12997
+  },
+  {
+    "report_date": "2024-09-08",
+    "ext_killed_cum": 40972,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 13030
+  },
+  {
+    "report_date": "2024-09-09",
+    "ext_killed_cum": 40988,
+    "ext_killed_children_cum": 16673,
+    "ext_killed_women_cum": 11269,
+    "killed_other_cum": 13046
+  },
+  {
+    "report_date": "2024-09-10",
+    "ext_killed_cum": 41020,
+    "ext_killed_children_cum": 16756,
+    "ext_killed_women_cum": 11346,
+    "killed_other_cum": 12918
+  },
+  {
+    "report_date": "2024-09-11",
+    "ext_killed_cum": 41084,
+    "ext_killed_children_cum": 16756,
+    "ext_killed_women_cum": 11346,
+    "killed_other_cum": 12982
+  },
+  {
+    "report_date": "2024-09-12",
+    "ext_killed_cum": 41118,
+    "ext_killed_children_cum": 16756,
+    "ext_killed_women_cum": 11346,
+    "killed_other_cum": 13016
+  },
+  {
+    "report_date": "2024-09-13",
+    "ext_killed_cum": 41118,
+    "ext_killed_children_cum": 16756,
+    "ext_killed_women_cum": 11346,
+    "killed_other_cum": 13016
+  },
+  {
+    "report_date": "2024-09-14",
+    "ext_killed_cum": 41182,
+    "ext_killed_children_cum": 16756,
+    "ext_killed_women_cum": 11346,
+    "killed_other_cum": 13080
+  },
+  {
+    "report_date": "2024-09-15",
+    "ext_killed_cum": 41206,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13033
+  },
+  {
+    "report_date": "2024-09-16",
+    "ext_killed_cum": 41226,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13053
+  },
+  {
+    "report_date": "2024-09-17",
+    "ext_killed_cum": 41252,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13079
+  },
+  {
+    "report_date": "2024-09-18",
+    "ext_killed_cum": 41272,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13099
+  },
+  {
+    "report_date": "2024-09-19",
+    "ext_killed_cum": 41272,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13099
+  },
+  {
+    "report_date": "2024-09-20",
+    "ext_killed_cum": 41272,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13099
+  },
+  {
+    "report_date": "2024-09-21",
+    "ext_killed_cum": 41391,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13218
+  },
+  {
+    "report_date": "2024-09-22",
+    "ext_killed_cum": 41431,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13258
+  },
+  {
+    "report_date": "2024-09-23",
+    "ext_killed_cum": 41455,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13282
+  },
+  {
+    "report_date": "2024-09-24",
+    "ext_killed_cum": 41467,
+    "ext_killed_children_cum": 16795,
+    "ext_killed_women_cum": 11378,
+    "killed_other_cum": 13294
+  },
+  {
+    "report_date": "2024-09-25",
+    "ext_killed_cum": 41495,
+    "ext_killed_children_cum": 16859,
+    "ext_killed_women_cum": 11429,
+    "killed_other_cum": 13207
+  },
+  {
+    "report_date": "2024-09-26",
+    "ext_killed_cum": 41534,
+    "ext_killed_children_cum": 16859,
+    "ext_killed_women_cum": 11429,
+    "killed_other_cum": 13246
+  },
+  {
+    "report_date": "2024-09-27",
+    "ext_killed_cum": 41534,
+    "ext_killed_children_cum": 16859,
+    "ext_killed_women_cum": 11429,
+    "killed_other_cum": 13246
+  },
+  {
+    "report_date": "2024-09-28",
+    "ext_killed_cum": 41586,
+    "ext_killed_children_cum": 16859,
+    "ext_killed_women_cum": 11429,
+    "killed_other_cum": 13298
+  },
+  {
+    "report_date": "2024-09-29",
+    "ext_killed_cum": 41595,
+    "ext_killed_children_cum": 16859,
+    "ext_killed_women_cum": 11429,
+    "killed_other_cum": 13307
+  },
+  {
+    "report_date": "2024-09-30",
+    "ext_killed_cum": 41615,
+    "ext_killed_children_cum": 16891,
+    "ext_killed_women_cum": 11458,
+    "killed_other_cum": 13266
+  },
+  {
+    "report_date": "2024-10-01",
+    "ext_killed_cum": 41638,
+    "ext_killed_children_cum": 16891,
+    "ext_killed_women_cum": 11458,
+    "killed_other_cum": 13289
+  },
+  {
+    "report_date": "2024-10-02",
+    "ext_killed_cum": 41689,
+    "ext_killed_children_cum": 16891,
+    "ext_killed_women_cum": 11458,
+    "killed_other_cum": 13340
+  },
+  {
+    "report_date": "2024-10-03",
+    "ext_killed_cum": 41788,
+    "ext_killed_children_cum": 16891,
+    "ext_killed_women_cum": 11458,
+    "killed_other_cum": 13439
+  },
+  {
+    "report_date": "2024-10-04",
+    "ext_killed_cum": 41802,
+    "ext_killed_children_cum": 16891,
+    "ext_killed_women_cum": 11458,
+    "killed_other_cum": 13453
+  },
+  {
+    "report_date": "2024-10-05",
+    "ext_killed_cum": 41825,
+    "ext_killed_children_cum": 16891,
+    "ext_killed_women_cum": 11458,
+    "killed_other_cum": 13476
+  },
+  {
+    "report_date": "2024-10-06",
+    "ext_killed_cum": 41870,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13456
+  },
+  {
+    "report_date": "2024-10-07",
+    "ext_killed_cum": 41909,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13495
+  },
+  {
+    "report_date": "2024-10-08",
+    "ext_killed_cum": 41965,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13551
+  },
+  {
+    "report_date": "2024-10-09",
+    "ext_killed_cum": 42010,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13596
+  },
+  {
+    "report_date": "2024-10-10",
+    "ext_killed_cum": 42065,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13651
+  },
+  {
+    "report_date": "2024-10-11",
+    "ext_killed_cum": 42126,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13712
+  },
+  {
+    "report_date": "2024-10-12",
+    "ext_killed_cum": 42175,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13761
+  },
+  {
+    "report_date": "2024-10-13",
+    "ext_killed_cum": 42227,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13813
+  },
+  {
+    "report_date": "2024-10-14",
+    "ext_killed_cum": 42289,
+    "ext_killed_children_cum": 16927,
+    "ext_killed_women_cum": 11487,
+    "killed_other_cum": 13875
+  },
+  {
+    "report_date": "2024-10-15",
+    "ext_killed_cum": 42344,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13730
+  },
+  {
+    "report_date": "2024-10-16",
+    "ext_killed_cum": 42409,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13795
+  },
+  {
+    "report_date": "2024-10-17",
+    "ext_killed_cum": 42438,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13824
+  },
+  {
+    "report_date": "2024-10-18",
+    "ext_killed_cum": 42500,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13886
+  },
+  {
+    "report_date": "2024-10-19",
+    "ext_killed_cum": 42519,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13905
+  },
+  {
+    "report_date": "2024-10-20",
+    "ext_killed_cum": 42603,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13989
+  },
+  {
+    "report_date": "2024-10-21",
+    "ext_killed_cum": 42603,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 13989
+  },
+  {
+    "report_date": "2024-10-22",
+    "ext_killed_cum": 42718,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 14104
+  },
+  {
+    "report_date": "2024-10-23",
+    "ext_killed_cum": 42792,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 14178
+  },
+  {
+    "report_date": "2024-10-24",
+    "ext_killed_cum": 42847,
+    "ext_killed_children_cum": 17029,
+    "ext_killed_women_cum": 11585,
+    "killed_other_cum": 14233
+  },
+  {
+    "report_date": "2024-10-25",
+    "ext_killed_cum": 42847,
+    "ext_killed_children_cum": 17210,
+    "ext_killed_women_cum": 11742,
+    "killed_other_cum": 13895
+  },
+  {
+    "report_date": "2024-10-26",
+    "ext_killed_cum": 42924,
+    "ext_killed_children_cum": 17210,
+    "ext_killed_women_cum": 11742,
+    "killed_other_cum": 13972
+  },
+  {
+    "report_date": "2024-10-27",
+    "ext_killed_cum": 42924,
+    "ext_killed_children_cum": 17210,
+    "ext_killed_women_cum": 11742,
+    "killed_other_cum": 13972
+  },
+  {
+    "report_date": "2024-10-28",
+    "ext_killed_cum": 43020,
+    "ext_killed_children_cum": 17210,
+    "ext_killed_women_cum": 11742,
+    "killed_other_cum": 14068
+  },
+  {
+    "report_date": "2024-10-29",
+    "ext_killed_cum": 43061,
+    "ext_killed_children_cum": 17210,
+    "ext_killed_women_cum": 11742,
+    "killed_other_cum": 14109
+  },
+  {
+    "report_date": "2024-10-30",
+    "ext_killed_cum": 43163,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14059
+  },
+  {
+    "report_date": "2024-10-31",
+    "ext_killed_cum": 43204,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14100
+  },
+  {
+    "report_date": "2024-11-01",
+    "ext_killed_cum": 43259,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14155
+  },
+  {
+    "report_date": "2024-11-02",
+    "ext_killed_cum": 43314,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14210
+  },
+  {
+    "report_date": "2024-11-03",
+    "ext_killed_cum": 43341,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14237
+  },
+  {
+    "report_date": "2024-11-04",
+    "ext_killed_cum": 43374,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14270
+  },
+  {
+    "report_date": "2024-11-05",
+    "ext_killed_cum": 43391,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14287
+  },
+  {
+    "report_date": "2024-11-06",
+    "ext_killed_cum": 43391,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14287
+  },
+  {
+    "report_date": "2024-11-07",
+    "ext_killed_cum": 43469,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14365
+  },
+  {
+    "report_date": "2024-11-08",
+    "ext_killed_cum": 43508,
+    "ext_killed_children_cum": 17289,
+    "ext_killed_women_cum": 11815,
+    "killed_other_cum": 14404
+  },
+  {
+    "report_date": "2024-11-09",
+    "ext_killed_cum": 43552,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14276
+  },
+  {
+    "report_date": "2024-11-10",
+    "ext_killed_cum": 43603,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14327
+  },
+  {
+    "report_date": "2024-11-11",
+    "ext_killed_cum": 43603,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14327
+  },
+  {
+    "report_date": "2024-11-12",
+    "ext_killed_cum": 43665,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14389
+  },
+  {
+    "report_date": "2024-11-13",
+    "ext_killed_cum": 43712,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14436
+  },
+  {
+    "report_date": "2024-11-14",
+    "ext_killed_cum": 43736,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14460
+  },
+  {
+    "report_date": "2024-11-15",
+    "ext_killed_cum": 43764,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14488
+  },
+  {
+    "report_date": "2024-11-16",
+    "ext_killed_cum": 43799,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14523
+  },
+  {
+    "report_date": "2024-11-17",
+    "ext_killed_cum": 43846,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14570
+  },
+  {
+    "report_date": "2024-11-18",
+    "ext_killed_cum": 43922,
+    "ext_killed_children_cum": 17385,
+    "ext_killed_women_cum": 11891,
+    "killed_other_cum": 14646
+  },
+  {
+    "report_date": "2024-11-19",
+    "ext_killed_cum": 43972,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14501
+  },
+  {
+    "report_date": "2024-11-20",
+    "ext_killed_cum": 43985,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14514
+  },
+  {
+    "report_date": "2024-11-21",
+    "ext_killed_cum": 44056,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14585
+  },
+  {
+    "report_date": "2024-11-22",
+    "ext_killed_cum": 44056,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14585
+  },
+  {
+    "report_date": "2024-11-23",
+    "ext_killed_cum": 44176,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14705
+  },
+  {
+    "report_date": "2024-11-24",
+    "ext_killed_cum": 44211,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14740
+  },
+  {
+    "report_date": "2024-11-25",
+    "ext_killed_cum": 44235,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14764
+  },
+  {
+    "report_date": "2024-11-26",
+    "ext_killed_cum": 44249,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14778
+  },
+  {
+    "report_date": "2024-11-27",
+    "ext_killed_cum": 44282,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14811
+  },
+  {
+    "report_date": "2024-11-28",
+    "ext_killed_cum": 44330,
+    "ext_killed_children_cum": 17492,
+    "ext_killed_women_cum": 11979,
+    "killed_other_cum": 14859
+  },
+  {
+    "report_date": "2024-11-29",
+    "ext_killed_cum": 44363,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14734
+  },
+  {
+    "report_date": "2024-11-30",
+    "ext_killed_cum": 44382,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14753
+  },
+  {
+    "report_date": "2024-12-01",
+    "ext_killed_cum": 44429,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14800
+  },
+  {
+    "report_date": "2024-12-02",
+    "ext_killed_cum": 44466,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14837
+  },
+  {
+    "report_date": "2024-12-03",
+    "ext_killed_cum": 44502,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14873
+  },
+  {
+    "report_date": "2024-12-04",
+    "ext_killed_cum": 44532,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14903
+  },
+  {
+    "report_date": "2024-12-05",
+    "ext_killed_cum": 44580,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14951
+  },
+  {
+    "report_date": "2024-12-06",
+    "ext_killed_cum": 44612,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 14983
+  },
+  {
+    "report_date": "2024-12-07",
+    "ext_killed_cum": 44664,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 15035
+  },
+  {
+    "report_date": "2024-12-08",
+    "ext_killed_cum": 44708,
+    "ext_killed_children_cum": 17581,
+    "ext_killed_women_cum": 12048,
+    "killed_other_cum": 15079
+  },
+  {
+    "report_date": "2024-12-09",
+    "ext_killed_cum": 44758,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 14910
+  },
+  {
+    "report_date": "2024-12-10",
+    "ext_killed_cum": 44786,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 14938
+  },
+  {
+    "report_date": "2024-12-11",
+    "ext_killed_cum": 44805,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 14957
+  },
+  {
+    "report_date": "2024-12-12",
+    "ext_killed_cum": 44835,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 14987
+  },
+  {
+    "report_date": "2024-12-13",
+    "ext_killed_cum": 44875,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 15027
+  },
+  {
+    "report_date": "2024-12-14",
+    "ext_killed_cum": 44930,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 15082
+  },
+  {
+    "report_date": "2024-12-15",
+    "ext_killed_cum": 44976,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 15128
+  },
+  {
+    "report_date": "2024-12-16",
+    "ext_killed_cum": 45028,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 15180
+  },
+  {
+    "report_date": "2024-12-17",
+    "ext_killed_cum": 45059,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 15211
+  },
+  {
+    "report_date": "2024-12-18",
+    "ext_killed_cum": 45097,
+    "ext_killed_children_cum": 17712,
+    "ext_killed_women_cum": 12136,
+    "killed_other_cum": 15249
+  },
+  {
+    "report_date": "2024-12-19",
+    "ext_killed_cum": 45129,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15102
+  },
+  {
+    "report_date": "2024-12-20",
+    "ext_killed_cum": 45206,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15179
+  },
+  {
+    "report_date": "2024-12-21",
+    "ext_killed_cum": 45227,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15200
+  },
+  {
+    "report_date": "2024-12-22",
+    "ext_killed_cum": 45259,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15232
+  },
+  {
+    "report_date": "2024-12-23",
+    "ext_killed_cum": 45317,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15290
+  },
+  {
+    "report_date": "2024-12-24",
+    "ext_killed_cum": 45338,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15311
+  },
+  {
+    "report_date": "2024-12-25",
+    "ext_killed_cum": 45361,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15334
+  },
+  {
+    "report_date": "2024-12-26",
+    "ext_killed_cum": 45399,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15372
+  },
+  {
+    "report_date": "2024-12-27",
+    "ext_killed_cum": 45436,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15409
+  },
+  {
+    "report_date": "2024-12-28",
+    "ext_killed_cum": 45484,
+    "ext_killed_children_cum": 17803,
+    "ext_killed_women_cum": 12224,
+    "killed_other_cum": 15457
+  },
+  {
+    "report_date": "2024-12-29",
+    "ext_killed_cum": 45514,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15409
+  },
+  {
+    "report_date": "2024-12-30",
+    "ext_killed_cum": 45541,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15436
+  },
+  {
+    "report_date": "2024-12-31",
+    "ext_killed_cum": 45541,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15436
+  },
+  {
+    "report_date": "2025-01-01",
+    "ext_killed_cum": 45553,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15448
+  },
+  {
+    "report_date": "2025-01-02",
+    "ext_killed_cum": 45581,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15476
+  },
+  {
+    "report_date": "2025-01-03",
+    "ext_killed_cum": 45658,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15553
+  },
+  {
+    "report_date": "2025-01-04",
+    "ext_killed_cum": 45717,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15612
+  },
+  {
+    "report_date": "2025-01-05",
+    "ext_killed_cum": 45805,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15700
+  },
+  {
+    "report_date": "2025-01-06",
+    "ext_killed_cum": 45854,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15749
+  },
+  {
+    "report_date": "2025-01-07",
+    "ext_killed_cum": 45885,
+    "ext_killed_children_cum": 17818,
+    "ext_killed_women_cum": 12287,
+    "killed_other_cum": 15780
+  },
+  {
+    "report_date": "2025-01-08",
+    "ext_killed_cum": 45936,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 15797
+  },
+  {
+    "report_date": "2025-01-09",
+    "ext_killed_cum": 46006,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 15867
+  },
+  {
+    "report_date": "2025-01-10",
+    "ext_killed_cum": 46006,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 15867
+  },
+  {
+    "report_date": "2025-01-11",
+    "ext_killed_cum": 46537,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16398
+  },
+  {
+    "report_date": "2025-01-12",
+    "ext_killed_cum": 46565,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16426
+  },
+  {
+    "report_date": "2025-01-13",
+    "ext_killed_cum": 46584,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16445
+  },
+  {
+    "report_date": "2025-01-14",
+    "ext_killed_cum": 46645,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16506
+  },
+  {
+    "report_date": "2025-01-15",
+    "ext_killed_cum": 46707,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16568
+  },
+  {
+    "report_date": "2025-01-16",
+    "ext_killed_cum": 46788,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16649
+  },
+  {
+    "report_date": "2025-01-17",
+    "ext_killed_cum": 46876,
+    "ext_killed_children_cum": 17841,
+    "ext_killed_women_cum": 12298,
+    "killed_other_cum": 16737
+  },
+  {
+    "report_date": "2025-01-18",
+    "ext_killed_cum": 46899,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 16722
+  },
+  {
+    "report_date": "2025-01-19",
+    "ext_killed_cum": 46913,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 16736
+  },
+  {
+    "report_date": "2025-01-20",
+    "ext_killed_cum": 47035,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 16858
+  },
+  {
+    "report_date": "2025-01-21",
+    "ext_killed_cum": 47107,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 16930
+  },
+  {
+    "report_date": "2025-01-22",
+    "ext_killed_cum": 47161,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 16984
+  },
+  {
+    "report_date": "2025-01-23",
+    "ext_killed_cum": 47283,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17106
+  },
+  {
+    "report_date": "2025-01-24",
+    "ext_killed_cum": 47283,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17106
+  },
+  {
+    "report_date": "2025-01-25",
+    "ext_killed_cum": 47283,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17106
+  },
+  {
+    "report_date": "2025-01-26",
+    "ext_killed_cum": 47306,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17129
+  },
+  {
+    "report_date": "2025-01-27",
+    "ext_killed_cum": 47317,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17140
+  },
+  {
+    "report_date": "2025-01-28",
+    "ext_killed_cum": 47354,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17177
+  },
+  {
+    "report_date": "2025-01-29",
+    "ext_killed_cum": 47417,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17240
+  },
+  {
+    "report_date": "2025-01-30",
+    "ext_killed_cum": 47460,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17283
+  },
+  {
+    "report_date": "2025-01-31",
+    "ext_killed_cum": 47460,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17283
+  },
+  {
+    "report_date": "2025-02-01",
+    "ext_killed_cum": 47487,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17310
+  },
+  {
+    "report_date": "2025-02-02",
+    "ext_killed_cum": 47498,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17321
+  },
+  {
+    "report_date": "2025-02-03",
+    "ext_killed_cum": 47518,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17341
+  },
+  {
+    "report_date": "2025-02-04",
+    "ext_killed_cum": 47540,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17363
+  },
+  {
+    "report_date": "2025-02-05",
+    "ext_killed_cum": 47552,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17375
+  },
+  {
+    "report_date": "2025-02-06",
+    "ext_killed_cum": 47583,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17406
+  },
+  {
+    "report_date": "2025-02-07",
+    "ext_killed_cum": 47583,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 17406
+  },
+  {
+    "report_date": "2025-02-08",
+    "ext_killed_cum": 48181,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18004
+  },
+  {
+    "report_date": "2025-02-09",
+    "ext_killed_cum": 48189,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18012
+  },
+  {
+    "report_date": "2025-02-10",
+    "ext_killed_cum": 48208,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18031
+  },
+  {
+    "report_date": "2025-02-11",
+    "ext_killed_cum": 48219,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18042
+  },
+  {
+    "report_date": "2025-02-12",
+    "ext_killed_cum": 48222,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18045
+  },
+  {
+    "report_date": "2025-02-13",
+    "ext_killed_cum": 48239,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18062
+  },
+  {
+    "report_date": "2025-02-14",
+    "ext_killed_cum": 48239,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18062
+  },
+  {
+    "report_date": "2025-02-15",
+    "ext_killed_cum": 48264,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18087
+  },
+  {
+    "report_date": "2025-02-16",
+    "ext_killed_cum": 48271,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18094
+  },
+  {
+    "report_date": "2025-02-17",
+    "ext_killed_cum": 48284,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18107
+  },
+  {
+    "report_date": "2025-02-18",
+    "ext_killed_cum": 48291,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18114
+  },
+  {
+    "report_date": "2025-02-19",
+    "ext_killed_cum": 48297,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18120
+  },
+  {
+    "report_date": "2025-02-20",
+    "ext_killed_cum": 48319,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18142
+  },
+  {
+    "report_date": "2025-02-21",
+    "ext_killed_cum": 48319,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18142
+  },
+  {
+    "report_date": "2025-02-22",
+    "ext_killed_cum": 48329,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18152
+  },
+  {
+    "report_date": "2025-02-23",
+    "ext_killed_cum": 48339,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18162
+  },
+  {
+    "report_date": "2025-02-24",
+    "ext_killed_cum": 48346,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18169
+  },
+  {
+    "report_date": "2025-02-25",
+    "ext_killed_cum": 48348,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18171
+  },
+  {
+    "report_date": "2025-02-26",
+    "ext_killed_cum": 48348,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18171
+  },
+  {
+    "report_date": "2025-02-27",
+    "ext_killed_cum": 48365,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18188
+  },
+  {
+    "report_date": "2025-02-28",
+    "ext_killed_cum": 48365,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18188
+  },
+  {
+    "report_date": "2025-03-01",
+    "ext_killed_cum": 48388,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18211
+  },
+  {
+    "report_date": "2025-03-02",
+    "ext_killed_cum": 48388,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18211
+  },
+  {
+    "report_date": "2025-03-03",
+    "ext_killed_cum": 48397,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18220
+  },
+  {
+    "report_date": "2025-03-04",
+    "ext_killed_cum": 48405,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18228
+  },
+  {
+    "report_date": "2025-03-05",
+    "ext_killed_cum": 48440,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18263
+  },
+  {
+    "report_date": "2025-03-06",
+    "ext_killed_cum": 48446,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18269
+  },
+  {
+    "report_date": "2025-03-07",
+    "ext_killed_cum": 48446,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18269
+  },
+  {
+    "report_date": "2025-03-08",
+    "ext_killed_cum": 48453,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18276
+  },
+  {
+    "report_date": "2025-03-09",
+    "ext_killed_cum": 48458,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18281
+  },
+  {
+    "report_date": "2025-03-10",
+    "ext_killed_cum": 48467,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18290
+  },
+  {
+    "report_date": "2025-03-11",
+    "ext_killed_cum": 48503,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18326
+  },
+  {
+    "report_date": "2025-03-12",
+    "ext_killed_cum": 48515,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18338
+  },
+  {
+    "report_date": "2025-03-13",
+    "ext_killed_cum": 48524,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18347
+  },
+  {
+    "report_date": "2025-03-14",
+    "ext_killed_cum": 48524,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18347
+  },
+  {
+    "report_date": "2025-03-15",
+    "ext_killed_cum": 48543,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18366
+  },
+  {
+    "report_date": "2025-03-16",
+    "ext_killed_cum": 48572,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18395
+  },
+  {
+    "report_date": "2025-03-17",
+    "ext_killed_cum": 48577,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18400
+  },
+  {
+    "report_date": "2025-03-18",
+    "ext_killed_cum": 49013,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 18836
+  },
+  {
+    "report_date": "2025-03-19",
+    "ext_killed_cum": 49617,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 19440
+  },
+  {
+    "report_date": "2025-03-20",
+    "ext_killed_cum": 49702,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 19525
+  },
+  {
+    "report_date": "2025-03-21",
+    "ext_killed_cum": 49702,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 19525
+  },
+  {
+    "report_date": "2025-03-22",
+    "ext_killed_cum": 49747,
+    "ext_killed_children_cum": 17861,
+    "ext_killed_women_cum": 12316,
+    "killed_other_cum": 19570
+  },
+  {
+    "report_date": "2025-03-23",
+    "ext_killed_cum": 50021,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19702
+  },
+  {
+    "report_date": "2025-03-24",
+    "ext_killed_cum": 50082,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19763
+  },
+  {
+    "report_date": "2025-03-25",
+    "ext_killed_cum": 50144,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19825
+  },
+  {
+    "report_date": "2025-03-26",
+    "ext_killed_cum": 50183,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19864
+  },
+  {
+    "report_date": "2025-03-27",
+    "ext_killed_cum": 50208,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19889
+  },
+  {
+    "report_date": "2025-03-28",
+    "ext_killed_cum": 50251,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19932
+  },
+  {
+    "report_date": "2025-03-29",
+    "ext_killed_cum": 50277,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 19958
+  },
+  {
+    "report_date": "2025-03-30",
+    "ext_killed_cum": 50330,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20011
+  },
+  {
+    "report_date": "2025-03-31",
+    "ext_killed_cum": 50357,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20038
+  },
+  {
+    "report_date": "2025-04-01",
+    "ext_killed_cum": 50399,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20080
+  },
+  {
+    "report_date": "2025-04-02",
+    "ext_killed_cum": 50423,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20104
+  },
+  {
+    "report_date": "2025-04-03",
+    "ext_killed_cum": 50523,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20204
+  },
+  {
+    "report_date": "2025-04-04",
+    "ext_killed_cum": 50609,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20290
+  },
+  {
+    "report_date": "2025-04-05",
+    "ext_killed_cum": 50669,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20350
+  },
+  {
+    "report_date": "2025-04-06",
+    "ext_killed_cum": 50695,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20376
+  },
+  {
+    "report_date": "2025-04-07",
+    "ext_killed_cum": 50752,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20433
+  },
+  {
+    "report_date": "2025-04-08",
+    "ext_killed_cum": 50810,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20491
+  },
+  {
+    "report_date": "2025-04-09",
+    "ext_killed_cum": 50846,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20527
+  },
+  {
+    "report_date": "2025-04-10",
+    "ext_killed_cum": 50886,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20567
+  },
+  {
+    "report_date": "2025-04-11",
+    "ext_killed_cum": 50912,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20593
+  },
+  {
+    "report_date": "2025-04-12",
+    "ext_killed_cum": 50933,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20614
+  },
+  {
+    "report_date": "2025-04-13",
+    "ext_killed_cum": 50944,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20625
+  },
+  {
+    "report_date": "2025-04-14",
+    "ext_killed_cum": 50983,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20664
+  },
+  {
+    "report_date": "2025-04-15",
+    "ext_killed_cum": 51000,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20681
+  },
+  {
+    "report_date": "2025-04-16",
+    "ext_killed_cum": 51025,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20706
+  },
+  {
+    "report_date": "2025-04-17",
+    "ext_killed_cum": 51065,
+    "ext_killed_children_cum": 17954,
+    "ext_killed_women_cum": 12365,
+    "killed_other_cum": 20746
+  },
+  {
+    "report_date": "2025-04-18",
+    "ext_killed_cum": 51065,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20665
+  },
+  {
+    "report_date": "2025-04-19",
+    "ext_killed_cum": 51157,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20757
+  },
+  {
+    "report_date": "2025-04-20",
+    "ext_killed_cum": 51201,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20801
+  },
+  {
+    "report_date": "2025-04-21",
+    "ext_killed_cum": 51240,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20840
+  },
+  {
+    "report_date": "2025-04-22",
+    "ext_killed_cum": 51266,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20866
+  },
+  {
+    "report_date": "2025-04-23",
+    "ext_killed_cum": 51305,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20905
+  },
+  {
+    "report_date": "2025-04-24",
+    "ext_killed_cum": 51355,
+    "ext_killed_children_cum": 18000,
+    "ext_killed_women_cum": 12400,
+    "killed_other_cum": 20955
+  }
+]
