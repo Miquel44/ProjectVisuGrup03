@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Acumulated Death</title>
+  <link rel="stylesheet" href="../../css/global_styles.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="../../static/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../static/favicon-16x16.png">
+  <link rel="manifest" href="../../static/site.webmanifest">
+  <style>
+    body {
+      margin: 0;
+      padding: 20px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      user-select: none;
+    }
+    h1 {
+      text-align: center;
+      color: var(--red-color);
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+    #output {
+      text-align: center;
+      font-size: 1.2em;
+      margin-bottom: 15px;
+      color: var(--red-color);
+      white-space: pre-wrap;
+    }
+    #grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 3px;
+      max-width: 95vw;
+      margin: 0 auto;
+      user-select: none;
+    }
+    .emoji {
+      font-size: 18px;
+      line-height: 1;
+      width: 22px;
+      height: 22px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.2s ease;
+      cursor: default;
+    }
+    .emoji:hover {
+      transform: scale(1.3);
+      filter: drop-shadow(0 0 2px rgba(58, 58, 58, 0.3));
+    }
+  </style>
+</head>
+<body>
+  <h1>Acumulated Deaths</h1>
+  <div id="output">Loading...</div>
+  <div id="grid"></div>
+
+  <script>
+    const output = document.getElementById("output");
+    const grid = document.getElementById("grid");
+    const params = new URLSearchParams(window.location.search);
+    const date = params.get("date");
+
+    console.log("Recived parameter:", date);
+
+    if (!date) {
+      output.innerText = "Parameter 'date' no found in the URL.";
+    } else {
+      output.innerText = `Searching data for date: ${date}...`;
+
+      fetch(window.location.origin + "/graphs/body_count/demographics_cum.json")
+        .then(response => {
+          console.log("JSON file loaded, status:", response.status);
+          if (!response.ok) {
+            throw new Error(`Couldn't load JSON file (status ${response.status})`);
+          }
+          return response.json();
+        })
+        .then(data => {
+          console.log("Recived data (first 3 registris):", data.slice(0, 3));
+
+          const entry = data.find(d => d.report_date === date);
+
+          if (!entry) {
+            const msg = `Date not found in data: ${date}`;
+            console.warn(msg);
+            output.innerText = msg;
+            return;
+          }
+
+          console.log("Found entry for date:", entry);
+
+          const children = entry.ext_killed_children_cum || 0;
+          const women = entry.ext_killed_women_cum || 0;
+          const men = entry.killed_other_cum || 0;
+          const total = children + women + men;
+          const batchSize = 500;
+
+          if (total === 0) {
+            output.innerText = `No death registered for date: ${date}.`;
+            return;
+          }
+
+          let added = 0;
+          const emojiList = [];
+
+          emojiList.push(...Array(children).fill("👶🏻"));
+          emojiList.push(...Array(women).fill("👩🏼"));
+          emojiList.push(...Array(men).fill("👨🏽"));
+
+          function addBatch() {
+            const fragment = document.createDocumentFragment();
+            const limit = Math.min(added + batchSize, total);
+
+            for (; added < limit; added++) {
+              const div = document.createElement("div");
+              div.className = "emoji";
+              div.textContent = emojiList[added];
+              fragment.appendChild(div);
+            }
+            grid.appendChild(fragment);
+
+            if (added < total) {
+              output.innerText = `Acumulated deaths until ${date}: ${total.toLocaleString()} (${added.toLocaleString()} / ${total.toLocaleString()})`;
+              setTimeout(addBatch, 10);
+            } else {
+              output.innerText = `Acumulated deaths until ${date}: ${total.toLocaleString()} (👶 ${children}, 🧍‍♀️ ${women}, 🧍‍♂️ ${men})`;
+            }
+          }
+
+          addBatch();
+        })
+        .catch(error => {
+          console.error("Error in fetch or processing:", error);
+          output.innerText = `Error loading data: ${error.message}`;
+        });
+    }
+  </script>
+</body>
+</html>
