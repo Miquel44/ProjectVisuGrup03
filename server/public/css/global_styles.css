@@ -5,7 +5,6 @@
   --red-color: #e4312b;
 }
 
-
 body {
   margin: 0;
   background-image: url('../images/background_photo.jpeg');
@@ -14,7 +13,36 @@ body {
   background-position: center;
   background-attachment: fixed;
   font-family: sans-serif;
-  min-width: 1200px;
+}
+
+/* Global Bottom Banner */
+.bottom-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--red-color);
+  color: var(--black-color);
+  text-align: center;
+  padding: 10px 15px;
+  font-size: 0.9em;
+  border-top: 2px solid var(--black-color);
+  z-index: 999;
+  backdrop-filter: blur(4px);
+}
+
+.bottom-banner a {
+  color: var(--white-color);
+  text-decoration: underline;
+  display: inline;
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .bottom-banner {
+    font-size: 0.75em;
+    padding: 8px;
+  }
 }
 
 .info-box {
@@ -27,4 +55,3 @@ body {
   position: relative;
   text-align: center;
 }
-
