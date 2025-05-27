@@ -54,7 +54,6 @@ body {
 .triangle-btn:hover { transform: translateX(-40px); }
 
 /* Title styling */
-
 .title-container {
   position: absolute;
   top: 30px;
@@ -66,6 +65,8 @@ body {
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0,0,0,0.8);
   backdrop-filter: blur(2px);
+  width: 80%;
+  max-width: 800px;
 }
 
 .page-title {
@@ -108,4 +109,113 @@ body {
   font-size: 12px;
   line-height: 1.4;
   display: block;
+}
+
+/* Media queries para diseño responsivo */
+@media (max-width: 1200px) {
+  .flag {
+    width: 80vw;
+    height: 40vw;
+    max-width: 900px;
+    max-height: 450px;
+  }
+
+  .triangle-btn {
+    width: 30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .flag {
+    width: 90vw;
+    height: 45vw;
+  }
+
+  .title-container {
+    top: 20px;
+    padding: 15px;
+  }
+
+  .page-title h1 {
+    font-size: 2em;
+  }
+
+  .page-title h2 {
+    font-size: 1em;
+  }
+
+  .disclaimer-box {
+    max-width: 280px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 15px;
+    flex-direction: column;
+  }
+
+  .flag {
+    width: 95vw;
+    height: 47.5vw;
+    margin-top: 120px;
+    margin-bottom: 80px;
+  }
+
+  .title-container {
+    width: 90%;
+    top: 10px;
+    padding: 10px;
+  }
+
+  .page-title h1 {
+    font-size: 1.6em;
+  }
+
+  .page-title h2 {
+    font-size: 0.9em;
+  }
+
+  .disclaimer-box {
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+    max-width: 90%;
+    width: 90%;
+  }
+
+  /* Reducir efectos hover en pantallas táctiles */
+  .stripe.black:hover,
+  .stripe.white:hover,
+  .stripe.green:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .triangle-btn:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 10px;
+  }
+
+  .flag {
+    margin-top: 140px;
+    margin-bottom: 100px;
+  }
+
+  .page-title h1 {
+    font-size: 1.4em;
+  }
+
+  .page-title h2 {
+    font-size: 0.8em;
+  }
+
+  .disclaimer-box a {
+    font-size: 11px;
+  }
 }
