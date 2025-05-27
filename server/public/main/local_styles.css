@@ -1,221 +1,112 @@
-/* local_styles.css */
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 20px;
-  position: relative;
-  background-color: #f0f0f0;
+/* ----------  BASE LAYOUT ---------- */
+body{
+  display:flex;
+  flex-direction:column;       /* apila los bloques uno debajo del otro */
+  align-items:center;
+  justify-content:flex-start;
+  min-height:100vh;
+  margin:0;
+  padding:1.25rem;             /* 20 px → rem */
+  gap:1.5rem;                  /* espacio natural entre título-bandera-aviso */
 }
 
-.flag {
-  position: relative;
-  width: 900px; /* 1.5x original size */
-  height: 450px; /* 1.5x original size */
-  box-shadow: 0 0 10px rgba(0,0,0,0.5);
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: column;
+/* ----------  CONTENEDOR DEL TÍTULO ---------- */
+.title-container{
+  width:clamp(280px,90%,800px);
+  background:rgba(0,0,0,.6);
+  border:1px solid #f00;
+  padding:1.25rem;
+  border-radius:.625rem;
+  box-shadow:0 4px 6px rgba(0,0,0,.8);
+  backdrop-filter:blur(2px);
+  z-index:5;
 }
 
-.stripe {
-  height: 33.333%;
-  width: 100%;
-  border: none;
-  cursor: pointer;
-  z-index: 2;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.page-title h1{
+  margin:0;
+  font-size:clamp(1.4rem,5vw,2.5rem);
+  color:#f00;
+  text-align:center;
+  font-family:Arial, sans-serif;
+  text-shadow:2px 2px 4px #0007;
 }
 
-.black { background-color: #000; }
-.white { background-color: #fff; }
-.green { background-color: #009639; }
-
-.triangle-btn {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 270px; /* 1.5x original size */
-  height: 100%;
-  background: #ff0000;
-  border: none;
-  cursor: pointer;
-  z-index: 3;
-  transition: transform 0.3s ease;
-  clip-path: polygon(0 0, 100% 50%, 0 100%);
+.page-title h2{
+  margin:.5rem 0 0;
+  font-size:clamp(.9rem,3.2vw,1.2rem);
+  font-weight:bold;
+  color:#f00;
+  text-align:center;
+  text-shadow:2px 2px 4px #0007;
 }
 
-/* Hover effects */
-.stripe.black:hover { transform: translateY(-30px); box-shadow: 0 10px 15px rgba(0,0,0,0.3); }
-.stripe.white:hover { transform: translateX(40px); box-shadow: 0 0 15px rgba(0,0,0,0.3); }
-.stripe.green:hover { transform: translateY(30px); box-shadow: 0 -10px 15px rgba(0,0,0,0.3); }
-.triangle-btn:hover { transform: translateX(-40px); }
-
-/* Title styling */
-.title-container {
-  position: absolute;
-  top: 30px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.6);
-  border: 1px solid #FF0000;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.8);
-  backdrop-filter: blur(2px);
-  width: 80%;
-  max-width: 800px;
+/* ----------  BANDERA ---------- */
+.flag{
+  position:relative;
+  width:clamp(300px,90vw,900px);
+  aspect-ratio:2/1;
+  box-shadow:0 0 10px rgba(0,0,0,.5);
+  display:flex;
+  flex-direction:column;
+  overflow:hidden;
+  margin-top:auto;
+  margin-bottom:auto;
+  top:-4vh;
 }
 
-.page-title {
-  color: #FF0000;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  margin: 0;
+.stripe{
+  flex:1 0 0;                      /* tres franjas iguales */
+  border:none;
+  cursor:pointer;
+  z-index:2;
+  transition:transform .3s ease,box-shadow .3s ease;
 }
 
-.page-title h1 {
-  margin: 0;
-  font-size: 2.5em;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+.black{background:#000;}
+.white{background:#fff;}
+.green{background:#009639;}
+
+.triangle-btn{
+  position:absolute;
+  top:0;
+  left:0;
+  width:30%;                       /* siempre relativo al ancho */
+  height:100%;
+  background:#f00;
+  border:none;
+  cursor:pointer;
+  z-index:3;
+  clip-path:polygon(0 0,100% 50%,0 100%);
+  transition:transform .3s ease;
 }
 
-.page-title h2 {
-  margin: 10px 0 0 0;
-  font-size: 1.2em;
-  font-weight: bold;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+/* ----------  EFECTOS HOVER (solo en dispositivos con puntero) ---------- */
+@media (hover:hover){
+  .black:hover { transform:translateY(-7%);  box-shadow:0 10px 15px rgba(0,0,0,.3); }
+  .white:hover { transform:translateX(4.5%); box-shadow:0 0 15px rgba(0,0,0,.3); }
+  .green:hover { transform:translateY(7%);   box-shadow:0 -10px 15px rgba(0,0,0,.3); }
+  .triangle-btn:hover{ transform:translateX(-4.5%); }
 }
 
-/* Boxed disclaimer styling */
-.disclaimer-box {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  padding: 15px;
-  background-color: rgba(0,0,0,0.5);
-  border: 2px solid #FF0000;
-  border-radius: 5px;
-  max-width: 320px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-  backdrop-filter: blur(2px);
+/* ----------  CAJA DE AVISO / DISCLAIMER ---------- */
+.disclaimer-box{
+  position:fixed;                 /* siempre en la esquina */
+  bottom:clamp(10px,2.5vw,20px);
+  left:clamp(10px,2.5vw,20px);
+  width:clamp(200px,40vw,320px);
+  background:rgba(0,0,0,.5);
+  border:2px solid #f00;
+  border-radius:.3125rem;
+  padding:.9rem;
+  box-shadow:0 2px 8px rgba(0,0,0,.15);
+  backdrop-filter:blur(2px);
+  z-index:4;
 }
 
-.disclaimer-box a {
-  color: #FF0000;
-  text-decoration: underline;
-  font-size: 12px;
-  line-height: 1.4;
-  display: block;
-}
-
-/* Media queries para diseño responsivo */
-@media (max-width: 1200px) {
-  .flag {
-    width: 80vw;
-    height: 40vw;
-    max-width: 900px;
-    max-height: 450px;
-  }
-
-  .triangle-btn {
-    width: 30%;
-  }
-}
-
-@media (max-width: 992px) {
-  .flag {
-    width: 90vw;
-    height: 45vw;
-  }
-
-  .title-container {
-    top: 20px;
-    padding: 15px;
-  }
-
-  .page-title h1 {
-    font-size: 2em;
-  }
-
-  .page-title h2 {
-    font-size: 1em;
-  }
-
-  .disclaimer-box {
-    max-width: 280px;
-  }
-}
-
-@media (max-width: 768px) {
-  body {
-    padding: 15px;
-    flex-direction: column;
-  }
-
-  .flag {
-    width: 95vw;
-    height: 47.5vw;
-    margin-top: 120px;
-    margin-bottom: 80px;
-  }
-
-  .title-container {
-    width: 90%;
-    top: 10px;
-    padding: 10px;
-  }
-
-  .page-title h1 {
-    font-size: 1.6em;
-  }
-
-  .page-title h2 {
-    font-size: 0.9em;
-  }
-
-  .disclaimer-box {
-    left: 50%;
-    bottom: 10px;
-    transform: translateX(-50%);
-    max-width: 90%;
-    width: 90%;
-  }
-
-  /* Reducir efectos hover en pantallas táctiles */
-  .stripe.black:hover,
-  .stripe.white:hover,
-  .stripe.green:hover {
-    transform: none;
-    box-shadow: none;
-  }
-
-  .triangle-btn:hover {
-    transform: none;
-  }
-}
-
-@media (max-width: 480px) {
-  body {
-    padding: 10px;
-  }
-
-  .flag {
-    margin-top: 140px;
-    margin-bottom: 100px;
-  }
-
-  .page-title h1 {
-    font-size: 1.4em;
-  }
-
-  .page-title h2 {
-    font-size: 0.8em;
-  }
-
-  .disclaimer-box a {
-    font-size: 11px;
-  }
+.disclaimer-box a{
+  font-size:.75rem;
+  line-height:1.4;
+  color:#f00;
+  text-decoration:underline;
+  display:block;
 }
