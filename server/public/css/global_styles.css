@@ -68,7 +68,21 @@ body {
   z-index: 1000;
   text-align: left;
 }
-
+.info-box-graphs-top-left {
+  background: var(--black-color);
+  color: var(--red-color);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  bottom: auto; /* Elimina cualquier valor previo */
+  right: auto; /* Elimina cualquier valor previo */
+  width: 250px;
+  z-index: 1000;
+  text-align: left;
+}
 .close-button {
   position: absolute;
   top: 5px;
