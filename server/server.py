@@ -101,7 +101,7 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
             self._serve_file(
                 environment.os.path.join(
                     environment.PUBLIC_HTML_FILES_PATH,
-                    'images',
+                    'static',
                     'apple-touch-icon.png',
                 ),
                 'image/png',
@@ -200,7 +200,7 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                 'text/html',
             )
 
-        elif parsed_path.split('?')[0] == 'graphs/body_count_view':
+        elif parsed_path.split('?')[0] == '/graphs/body_count_view':
             self._serve_file(
                 environment.os.path.join(
                     environment.PUBLIC_HTML_FILES_PATH,
@@ -208,7 +208,18 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     'body_count',
                     'body_count_view.html',
                 ),
-                'text/html'
+                'text/html',
+            )
+
+        elif parsed_path == '/graphs/body_count/demographics_cum.json':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'demographics_cum.json',
+                ),
+                'application/json',
             )
 
         elif parsed_path == '/graphs/body_count/body_count_files/htmlwidgets-1.6.4/htmlwidgets.js':
