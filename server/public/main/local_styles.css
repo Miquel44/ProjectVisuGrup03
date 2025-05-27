@@ -8,6 +8,8 @@ body{
   margin:0;
   padding:1.25rem;             /* 20 px → rem */
   gap:1.5rem;                  /* espacio natural entre título-bandera-aviso */
+  overflow: hidden;
+  height: 100%;
 }
 
 /* ----------  CONTENEDOR DEL TÍTULO ---------- */
@@ -43,12 +45,11 @@ body{
 /* ----------  BANDERA ---------- */
 .flag{
   position:relative;
-  width:clamp(300px,90vw,900px);
+  width:50vw;
   aspect-ratio:2/1;
   box-shadow:0 0 10px rgba(0,0,0,.5);
   display:flex;
   flex-direction:column;
-  overflow:hidden;
   margin-top:auto;
   margin-bottom:auto;
   top:-4vh;
@@ -82,10 +83,10 @@ body{
 
 /* ----------  EFECTOS HOVER (solo en dispositivos con puntero) ---------- */
 @media (hover:hover){
-  .black:hover { transform:translateY(-7%);  box-shadow:0 10px 15px rgba(0,0,0,.3); }
-  .white:hover { transform:translateX(4.5%); box-shadow:0 0 15px rgba(0,0,0,.3); }
-  .green:hover { transform:translateY(7%);   box-shadow:0 -10px 15px rgba(0,0,0,.3); }
-  .triangle-btn:hover{ transform:translateX(-4.5%); }
+  .black:hover { transform:translateY(-20%);  box-shadow:0 10px 15px rgba(0,0,0,.3); }
+  .white:hover { transform:translateX(15%); box-shadow:0 0 15px rgba(0,0,0,.3); }
+  .green:hover { transform:translateY(20%);   box-shadow:0 -10px 15px rgba(0,0,0,.3); }
+  .triangle-btn:hover{ transform:translateX(-30%); }
 }
 
 /* ----------  CAJA DE AVISO / DISCLAIMER ---------- */
