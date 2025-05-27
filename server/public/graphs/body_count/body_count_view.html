@@ -72,7 +72,7 @@
     } else {
       output.innerText = `Searching data for date: ${date}...`;
 
-      fetch(window.location.origin + "../../graphs/body_count/demographics_cum.json")
+      fetch(window.location.origin + "/graphs/body_count/demographics_cum.json")
         .then(response => {
           console.log("JSON file loaded, status:", response.status);
           if (!response.ok) {
