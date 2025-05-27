@@ -173,16 +173,16 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     environment.PUBLIC_HTML_FILES_PATH,
                     'graphs',
                     'infrastructure_loss',
-                    'placeholder.html',
+                    'infrastructure_loss.html',
                 ),
                 'text/html',
             )
-        elif parsed_path == '/images/infrastructure_final.gif':
+        elif parsed_path == '/images/infrastructure_loss.gif':
             self._serve_file(
                 environment.os.path.join(
                     environment.PUBLIC_HTML_FILES_PATH,
                     'images',
-                    'infrastructure_final.gif',
+                    'infrastructure_loss.gif',
                 ),
                 'image/gif',
             )
