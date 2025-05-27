@@ -57,6 +57,76 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                 'text/css',
             )
 
+        elif parsed_path == '/favicon.ico':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'static',
+                    'favicon.ico',
+                ),
+                'image/x-icon',
+            )
+
+        elif parsed_path == '/static/site.webmanifest':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'static',
+                    'site.webmanifest',
+                ),
+                'application/manifest+json',
+            )
+
+        elif parsed_path == '/static/android-chrome-192x192.png':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'static',
+                    'android-chrome-192x192.png',
+                ),
+                'image/png',
+            )
+
+        elif parsed_path == '/static/android-chrome-512x512.png':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'static',
+                    'android-chrome-512x512.png',
+                ),
+                'image/png',
+            )
+
+        elif parsed_path == '/static/apple-touch-icon.png':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'images',
+                    'apple-touch-icon.png',
+                ),
+                'image/png',
+            )
+
+        elif parsed_path == '/static/favicon-16x16.png':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'static',
+                    'favicon-16x16.png',
+                ),
+                'image/png',
+            )
+
+        elif parsed_path == '/static/favicon-32x32.png':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'static',
+                    'favicon-32x32.png',
+                ),
+                'image/png',
+            )
+
         elif parsed_path == '/images/background_photo.jpeg':
             self._serve_file(
                 environment.os.path.join(
@@ -125,9 +195,99 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     environment.PUBLIC_HTML_FILES_PATH,
                     'graphs',
                     'body_count',
-                    'placeholder.html',
+                    'body_count.html',
                 ),
                 'text/html',
+            )
+
+        elif parsed_path.split('?')[0] == 'graphs/body_count_view':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_view.html',
+                ),
+                'text/html'
+            )
+
+        elif parsed_path == '/graphs/body_count/body_count_files/htmlwidgets-1.6.4/htmlwidgets.js':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_files',
+                    'htmlwidgets-1.6.4',
+                    'htmlwidgets.js'
+                ),
+                'text/javascript',
+            )
+
+        elif parsed_path == '/graphs/body_count/body_count_files/plotly-binding-4.10.4/plotly.js':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_files',
+                    'plotly-binding-4.10.4',
+                    'plotly.js'
+                ),
+                'text/javascript',
+            )
+
+        elif parsed_path == '/graphs/body_count/body_count_files/typedarray-0.1/typedarray.min.js':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_files',
+                    'typedarray-0.1',
+                    'typedarray.min.js'
+                ),
+                'text/javascript',
+            )
+
+        elif parsed_path == '/graphs/body_count/body_count_files/jquery-3.5.1/jquery.min.js':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_files',
+                    'jquery-3.5.1',
+                    'jquery.min.js'
+                ),
+                'text/javascript',
+            )
+
+        elif parsed_path == '/graphs/body_count/body_count_files/crosstalk-1.2.1/js/crosstalk.min.js':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_files',
+                    'crosstalk-1.2.1',
+                    'js',
+                    'crosstalk.min.js',
+                ),
+                'text/javascript',
+            )
+
+        elif parsed_path == '/graphs/body_count/body_count_files/plotly-main-2.11.1/plotly-latest.min.js':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'body_count',
+                    'body_count_files',
+                    'plotly-main-2.11.1',
+                    'plotly-latest.min.js'
+                ),
+                'text/javascript',
             )
 
         else:
