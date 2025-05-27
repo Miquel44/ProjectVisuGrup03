@@ -177,6 +177,15 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                 ),
                 'text/html',
             )
+        elif parsed_path == '/images/infrastructure_final.gif':
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'images',
+                    'infrastructure_final.gif',
+                ),
+                'image/gif',
+            )
 
         elif parsed_path == '/graphs/types_of_death':
             self._serve_file(
