@@ -193,7 +193,7 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     environment.PUBLIC_HTML_FILES_PATH,
                     'graphs',
                     'types_of_death',
-                    'placeholder.html',
+                    'bar_chart_race.html',
                 ),
                 'text/html',
             )
