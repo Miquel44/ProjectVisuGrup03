@@ -3,7 +3,7 @@ library(plotly)
 library(htmlwidgets)
 library(stringr)
 
-# --- Carga y preprocessament ---
+# --- Càrrega i preprocessament ---
 data <- read_csv("infra.csv", na = c("NA"))
 
 data <- data %>%
@@ -23,8 +23,7 @@ data_long <- data %>%
 
 noms_amigables <- tibble(
   type = c(
-    "civic_buildings_destroyed", 
-    "civic_buildings_damaged",
+    "civic_buildings_destroyed",
     "educational_buildings_destroyed",
     "educational_buildings_damaged",
     "places_of_worship_mosques_destroyed", 
@@ -33,7 +32,6 @@ noms_amigables <- tibble(
   ),
   nom_amic = c(
     "Destroyed civic buildings", 
-    "Damaged civic buildings",
     "Destroyed educational buildings",
     "Damaged educational buildings",
     "Destroyed mosques", 
@@ -46,20 +44,19 @@ ordre_factors <- c(
   "Destroyed mosques", 
   "Damaged mosques",
   "Destroyed civic buildings", 
-  "Damaged civic buildings",
   "Destroyed educational buildings",
   "Damaged educational buildings",
   "Destroyed churches"
 )
 
+# Colors opacs (sense transparència)
 colors_palestina <- c(
   "Destroyed mosques" = "#007A3D",
-  "Damaged mosques" = "#8CCB9B",
+  "Damaged mosques" = "#2EBF76",
   "Destroyed civic buildings" = "#CE1126",
-  "Damaged civic buildings" = "#F4A7A7",
   "Destroyed educational buildings" = "#000000",
   "Damaged educational buildings" = "#555555",
-  "Destroyed churches" = "#0038B8FF"
+  "Destroyed churches" = "#0038B8"
 )
 
 data_long <- data_long %>%
@@ -68,7 +65,7 @@ data_long <- data_long %>%
     nom_amic = if_else(is.na(nom_amic), type, nom_amic),
     nom_amic = factor(nom_amic, levels = ordre_factors)
   ) %>%
-  filter(report_date <= as.Date("2024-04-30")) %>%
+  filter(report_date <= as.Date("2025-04-28")) %>%
   arrange(nom_amic, report_date) %>%
   group_by(nom_amic) %>%
   mutate(value_acum = value) %>%
@@ -96,6 +93,7 @@ data_long <- data_long %>%
     )
   )
 
+# Assegura que totes les categories hi siguin des del principi
 categories_completes <- tibble(
   report_date = min(data_long$report_date),
   nom_amic = factor(ordre_factors, levels = ordre_factors),
@@ -106,61 +104,92 @@ categories_completes <- tibble(
 
 data_long <- bind_rows(categories_completes, data_long)
 
-missing_colors <- setdiff(unique(data_long$nom_amic), names(colors_palestina))
-if (length(missing_colors) > 0) {
-  stop("Falten colors per als següents tipus: ", paste(missing_colors, collapse = ", "))
+# --- Creació del gràfic amb àrees opaces ---
+plot_simple <- plot_ly()
+
+for (categoria in ordre_factors) {
+  df_categoria <- data_long %>% filter(nom_amic == categoria)
+  plot_simple <- plot_simple %>%
+    add_trace(
+      data = df_categoria,
+      x = ~report_date,
+      y = ~value_acum,
+      type = 'scatter',
+      mode = 'none',
+      name = categoria,
+      fill = 'tonexty',
+      stackgroup = 'one',
+      fillcolor = colors_palestina[[as.character(categoria)]],
+      text = ~hover_text,
+      hoverinfo = "text"
+    )
 }
 
-plot_simple <- plot_ly(
-  data = data_long,
-  x = ~report_date,
-  y = ~value_acum,
-  color = ~nom_amic,
-  colors = colors_palestina,
-  text = ~hover_text,
-  hoverinfo = "text",
-  type = 'scatter',
-  mode = 'none',
-  stackgroup = 'one',
-  fill = 'tonexty',
-  opacity = 1
-) %>% 
+plot_simple <- plot_simple %>%
   layout(
-    paper_bgcolor = 'rgba(0, 0, 0, 0.5)',
-    plot_bgcolor = 'rgba(255, 255, 255, 1)',
+    paper_bgcolor = 'rgba(0,0,0,0.35)',
+    plot_bgcolor = 'rgba(255,255,255,1)',
     title = list(
-      text = "<b>Essential Infrastructure Damage</b>",
+      text = "<b>Essential Infrastructures Damage</b>",
       font = list(size = 22, color = "white"),
       x = 0.05
     ),
     margin = list(t = 70, b = 70),
     legend = list(
-      title = list(text = "<b>Infrastructure Type</b>", font = list(color = "white")),
-      font = list(size = 14, color = "white"),
-      bgcolor = 'rgba(0,0,0,0.5)'
+      title = list(text = "<b>Infrastructure types</b>", font = list(color = "white")),
+      font = list(size = 11, color = "white"),
+      bgcolor = 'rgba(0,0,0,0.45)'
     ),
     xaxis = list(
       title = "",
-      gridcolor = 'rgba(255,255,255,0.2)',
+      gridcolor = 'rgba(0,0,0,0)',
+      text = 'Data',
       color = "white",
-      tickfont = list(size = 12)
+      tickfont = list(size = 12),
+      range = c(min(data_long$report_date), as.Date("2025-04-28"))
     ),
     yaxis = list(
       title = list(
-        text = "Cumulative Damage Count",
+        text = "Acumulative",
         font = list(size = 14, color = "white")),
-      gridcolor = 'rgba(255,255,255,0.2)',
+      gridcolor = 'rgba(0,0,0,0.1)',
       color = "white",
       tickfont = list(size = 12)
     ),
     hoverlabel = list(
-      bgcolor = "rgba(255,255,255,0.9)",
+      bgcolor = "rgba(0,0,0,0)",
       font = list(color = "black", size = 12),
       bordercolor = "white"
     )
   ) %>%
-  config(displayModeBar = FALSE)  # Esta línea elimina la barra de herramientas
+  config(displayModeBar = FALSE)
 
-# Guardar el widget
-html_file <- "plot_infra_opaque.html"
-saveWidget(plot_simple, file = html_file, selfcontained = TRUE)
+plot_simple
+
+saveWidget(plot_simple, "infraestructures_damage.html", selfcontained = TRUE)
+
+
+# ----------------- FACET --------------------#
+
+facet_plot_static <- data_long %>%
+  filter(nom_amic %in% ordre_factors) %>%
+  ggplot(aes(x = report_date, y = value_acum, fill = nom_amic)) +
+  geom_area(alpha = 0.5, color = NA) +
+  scale_fill_manual(values = colors_palestina, name = "Tipus d'Infraestructura") +
+  facet_wrap(~ nom_amic, nrow = 2, ncol = 4, scales = "free_y") +  # Ajusta per 7 categories, 4 columnes per exemple
+  labs(
+    title = "Infraestructures afectades per categoria",
+    x = "Data",
+    y = "Acumulatiu"
+  ) +
+  theme_minimal(base_size = 12) +
+  theme(
+    strip.text = element_text(size = 10),
+    plot.title = element_text(size = 14, hjust = 0),
+    legend.position = "none",
+    axis.text.x = element_text(angle = 45, hjust = 1),
+    panel.grid.minor = element_blank()
+  )
+
+# Mostrar el gràfic
+facet_plot_static
