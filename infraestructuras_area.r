@@ -1,35 +1,26 @@
-#-----------------------ANIMATION---------------------#
-
 library(tidyverse)
-library(gganimate)
+library(plotly)
+library(htmlwidgets)
 library(stringr)
 
-# Directori i càrrega de dades
-setwd('C:\\Users\\minaa\\OneDrive\\Escritorio\\Documentos\\EDD\\3r any\\2n Semestre\\VD\\Projecte\\ProjectVisuGrup03-main\\data')
+# --- Carga y preprocessament ---
 data <- read_csv("infra.csv", na = c("NA"))
 
-# Conversió de dates
-data <- data %>% mutate(report_date = as.Date(report_date))
-
-# Neteja de NAs
 data <- data %>%
+  mutate(report_date = as.Date(report_date)) %>%
   mutate(across(starts_with("civic_buildings.ext_") | 
                   starts_with("educational_buildings.ext_") | 
                   starts_with("places_of_worship.ext_"),
-                ~replace_na(., 0)))
-
-# Selecció i transformació a format long
-data_ext <- data %>%
+                ~replace_na(., 0))) %>%
   select(report_date, 
          starts_with("civic_buildings.ext_"), 
          starts_with("educational_buildings.ext_"), 
          starts_with("places_of_worship.ext_"))
 
-data_long <- data_ext %>%
+data_long <- data %>%
   pivot_longer(cols = -report_date, names_to = "type", values_to = "value") %>%
   mutate(type = str_replace(type, "^([^.]+)\\.ext_(.*)$", "\\1_\\2"))
 
-# Traducció dels noms a anglès
 noms_amigables <- tibble(
   type = c(
     "civic_buildings_destroyed", 
@@ -51,16 +42,6 @@ noms_amigables <- tibble(
   )
 )
 
-# Unió amb noms i càlcul acumulat
-data_long <- data_long %>%
-  left_join(noms_amigables, by = "type") %>%
-  mutate(nom_amic = if_else(is.na(nom_amic), type, nom_amic)) %>%
-  arrange(nom_amic, report_date) %>%
-  group_by(nom_amic) %>%
-  mutate(value_acum = cumsum(value)) %>%
-  ungroup()
-
-# Ordre personalitzat (per a l'stacking)
 ordre_factors <- c(
   "Destroyed mosques", 
   "Damaged mosques",
@@ -78,52 +59,108 @@ colors_palestina <- c(
   "Damaged civic buildings" = "#F4A7A7",
   "Destroyed educational buildings" = "#000000",
   "Damaged educational buildings" = "#555555",
-  "Destroyed churches" = "steelblue"
+  "Destroyed churches" = "#0038B8FF"
 )
 
 data_long <- data_long %>%
-  mutate(nom_amic = as.character(nom_amic))
+  left_join(noms_amigables, by = "type") %>%
+  mutate(
+    nom_amic = if_else(is.na(nom_amic), type, nom_amic),
+    nom_amic = factor(nom_amic, levels = ordre_factors)
+  ) %>%
+  filter(report_date <= as.Date("2024-04-30")) %>%
+  arrange(nom_amic, report_date) %>%
+  group_by(nom_amic) %>%
+  mutate(value_acum = value) %>%
+  ungroup() %>%
+  mutate(
+    fecha = format(report_date, "%d %b %Y"),
+    hover_text = paste0(
+      "<b style='color:#FF0000;'>", fecha, "</b><br>",
+      "Type: ", nom_amic, "<br>",
+      "Cumulative: ", value_acum
+    ),
+    contexto = paste0(
+      "<div style='color:white; max-height:60vh; overflow-y:auto; padding:10px;'>
+        <style>
+          a.custom-link { all: unset !important; cursor: pointer !important; }
+          div a.custom-link, div a.custom-link:hover {
+            color: #FF0000 !important;
+            border-bottom: 1px solid #FF0000 !important;
+          }
+          .tight-heading { margin: 0 0 8px 0 !important; line-height: 1.2 !important; }
+        </style>
+        <h2 style='color:#FF0000;'>", nom_amic, "</h2>
+        <p style='color:#ccc; line-height:1.6;'>Date: ", fecha, "<br>Cumulative Count: ", value_acum, "</p>
+      </div>"
+    )
+  )
 
 categories_completes <- tibble(
   report_date = min(data_long$report_date),
-  nom_amic = unique(data_long$nom_amic),
-  value_acum = 0
+  nom_amic = factor(ordre_factors, levels = ordre_factors),
+  value_acum = 0,
+  hover_text = "",
+  contexto = ""
 )
 
-data_plot <- bind_rows(categories_completes, data_long %>% select(report_date, nom_amic, value_acum)) %>%
-  arrange(report_date, nom_amic)
+data_long <- bind_rows(categories_completes, data_long)
 
-gg_area_anim <- ggplot(data_plot, aes(x = report_date, y = value_acum, fill = nom_amic)) +
-  geom_area(stat = "identity", color = "black", size = 0.2, position = "stack") +
-  scale_fill_manual(values = colors_palestina) +
-  labs(
-    title = "Cumulative Infrastructure Damage",
-    x = "Date",
-    y = "Count",
-    fill = "Infrastructure Types"
-  ) +
-  theme_minimal() +
-  theme(
-    plot.background = element_rect(fill = rgb(0, 0, 0, alpha = 0.5, maxColorValue = 255), color = NA),
-    panel.background = element_rect(fill = rgb(0, 0, 0, alpha = 0.5, maxColorValue = 255), color = NA),
-    legend.background = element_rect(fill = rgb(0, 0, 0, alpha = 0.5, maxColorValue = 255), color = 'black'),
-    
-    plot.title = element_text(color = "black", size = 16, face = "bold"),
-    legend.title = element_text(face = "bold")
-  ) +
-  transition_reveal(along = report_date)
+missing_colors <- setdiff(unique(data_long$nom_amic), names(colors_palestina))
+if (length(missing_colors) > 0) {
+  stop("Falten colors per als següents tipus: ", paste(missing_colors, collapse = ", "))
+}
 
+plot_simple <- plot_ly(
+  data = data_long,
+  x = ~report_date,
+  y = ~value_acum,
+  color = ~nom_amic,
+  colors = colors_palestina,
+  text = ~hover_text,
+  hoverinfo = "text",
+  type = 'scatter',
+  mode = 'none',
+  stackgroup = 'one',
+  fill = 'tonexty',
+  opacity = 1
+) %>% 
+  layout(
+    paper_bgcolor = 'rgba(0, 0, 0, 0.5)',
+    plot_bgcolor = 'rgba(255, 255, 255, 1)',
+    title = list(
+      text = "<b>Essential Infrastructure Damage</b>",
+      font = list(size = 22, color = "white"),
+      x = 0.05
+    ),
+    margin = list(t = 70, b = 70),
+    legend = list(
+      title = list(text = "<b>Infrastructure Type</b>", font = list(color = "white")),
+      font = list(size = 14, color = "white"),
+      bgcolor = 'rgba(0,0,0,0.5)'
+    ),
+    xaxis = list(
+      title = "",
+      gridcolor = 'rgba(255,255,255,0.2)',
+      color = "white",
+      tickfont = list(size = 12)
+    ),
+    yaxis = list(
+      title = list(
+        text = "Cumulative Damage Count",
+        font = list(size = 14, color = "white")),
+      gridcolor = 'rgba(255,255,255,0.2)',
+      color = "white",
+      tickfont = list(size = 12)
+    ),
+    hoverlabel = list(
+      bgcolor = "rgba(255,255,255,0.9)",
+      font = list(color = "black", size = 12),
+      bordercolor = "white"
+    )
+  ) %>%
+  config(displayModeBar = FALSE)  # Esta línea elimina la barra de herramientas
 
-# Exportar frames .png amb transparència
-animate(
-  gg_area_anim,
-  fps = 10,
-  duration = 10,
-  width = 800,
-  height = 600,
-  renderer = gifski_renderer('infra_gif.gif')  # Aquí canviem a gifski_renderer per sortir directament un gif
-  # Opcional: si vols fons transparent
-)
-
-
-
+# Guardar el widget
+html_file <- "plot_infra_opaque.html"
+saveWidget(plot_simple, file = html_file, selfcontained = TRUE)
