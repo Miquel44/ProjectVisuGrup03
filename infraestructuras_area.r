@@ -128,7 +128,7 @@ for (categoria in ordre_factors) {
 plot_simple <- plot_simple %>%
   layout(
     paper_bgcolor = 'rgba(0,0,0,0.35)',
-    plot_bgcolor = 'rgba(255,255,255,1)',
+    plot_bgcolor = 'rgba(0,0,0,0.35)',
     title = list(
       text = "<b>Essential Infrastructures Damage</b>",
       font = list(size = 22, color = "white"),
@@ -138,12 +138,13 @@ plot_simple <- plot_simple %>%
     legend = list(
       title = list(text = "<b>Infrastructure types</b>", font = list(color = "white")),
       font = list(size = 11, color = "white"),
-      bgcolor = 'rgba(0,0,0,0.45)'
+      bgcolor = 'rgba(0,0,0,0.35)',  # Mateix fons que el gràfic
+      bordercolor = 'rgba(255,255,255,0.2)',  # Opcional: un petit contorn
+      borderwidth = 1
     ),
     xaxis = list(
       title = "",
-      gridcolor = 'rgba(0,0,0,0)',
-      text = 'Data',
+      gridcolor = 'rgba(255,255,255,0.15)',  # Línies suaus, visibles
       color = "white",
       tickfont = list(size = 12),
       range = c(min(data_long$report_date), as.Date("2025-04-28"))
@@ -152,7 +153,7 @@ plot_simple <- plot_simple %>%
       title = list(
         text = "Acumulative",
         font = list(size = 14, color = "white")),
-      gridcolor = 'rgba(0,0,0,0.1)',
+      gridcolor = 'rgba(255,255,255,0.15)',  # Mateix que a X
       color = "white",
       tickfont = list(size = 12)
     ),
@@ -163,6 +164,7 @@ plot_simple <- plot_simple %>%
     )
   ) %>%
   config(displayModeBar = FALSE)
+
 
 plot_simple
 
