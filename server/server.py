@@ -193,9 +193,82 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     environment.PUBLIC_HTML_FILES_PATH,
                     'graphs',
                     'types_of_death',
-                    'bar_chart_race.html',
+                    'piechart_race_combined.html',
                 ),
                 'text/html',
+            )
+        elif parsed_path == "/graphs/types_of_death/libs/htmlwidgets-1.6.4/htmlwidgets.js":
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'libs',
+                    'htmlwidgets-1.6.4',
+                    'htmlwidgets.js',
+                ),
+                'text/javascript',
+            )
+        elif parsed_path == "/graphs/types_of_death/libs/plotly-binding-4.10.4/plotly.js":
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'libs',
+                    'plotly-binding-4.10.4',
+                    'plotly.js',
+                ),
+                'text/javascript',
+            )
+        elif parsed_path == "/graphs/types_of_death/libs/typedarray-0.1/typedarray.min.js":
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'libs',
+                    'typedarray-0.1',
+                    'typedarray.min.js',
+                ),
+                'text/javascript',
+            )
+        elif parsed_path == "/graphs/types_of_death/libs/jquery-3.5.1/jquery.min.js":
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'libs',
+                    'jquery-3.5.1',
+                    'jquery.min.js',
+                ),
+                'text/javascript',
+            )
+        elif parsed_path == "/graphs/types_of_death/libs/crosstalk-1.2.1/js/crosstalk.min.js":
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'libs',
+                    'crosstalk-1.2.1',
+                    'js',
+                    'crosstalk.min.js',
+                ),
+                'text/javascript',
+            )
+        elif parsed_path == "/graphs/types_of_death/libs/plotly-main-2.11.1/plotly-latest.min.js":
+            self._serve_file(
+                environment.os.path.join(
+                    environment.PUBLIC_HTML_FILES_PATH,
+                    'graphs',
+                    'types_of_death',
+                    'libs',
+                    'plotly-main-2.11.1',
+                    'plotly-latest.min.js',
+                ),
+                'text/javascript',
             )
 
         elif parsed_path == '/graphs/body_count':

@@ -65,10 +65,10 @@
     const params = new URLSearchParams(window.location.search);
     const date = params.get("date");
 
-    console.log("Recived parameter:", date);
+    console.log("Received parameter:", date);
 
     if (!date) {
-      output.innerText = "Parameter 'date' no found in the URL.";
+      output.innerText = "Parameter 'date' not found in the URL.";
     } else {
       output.innerText = `Searching data for date: ${date}...`;
 
@@ -81,7 +81,7 @@
           return response.json();
         })
         .then(data => {
-          console.log("Recived data (first 3 registris):", data.slice(0, 3));
+          console.log("Received data (first 3 entries):", data.slice(0, 3));
 
           const entry = data.find(d => d.report_date === date);
 
@@ -101,16 +101,17 @@
           const batchSize = 500;
 
           if (total === 0) {
-            output.innerText = `No death registered for date: ${date}.`;
+            output.innerText = `No deaths registered for date: ${date}.`;
             return;
           }
 
           let added = 0;
           const emojiList = [];
 
-          emojiList.push(...Array(children).fill("👶🏻"));
-          emojiList.push(...Array(women).fill("👩🏼"));
-          emojiList.push(...Array(men).fill("👨🏽"));
+          // Emojis con tono de piel medio (tipo 4)
+          emojiList.push(...Array(children).fill("🧒🏻"));
+          emojiList.push(...Array(women).fill("👩🏽"));
+          emojiList.push(...Array(men).fill("🧔🏾"));
 
           function addBatch() {
             const fragment = document.createDocumentFragment();
@@ -125,10 +126,13 @@
             grid.appendChild(fragment);
 
             if (added < total) {
-              output.innerText = `Acumulated deaths until ${date}: ${total.toLocaleString()} (${added.toLocaleString()} / ${total.toLocaleString()})`;
+              output.innerText = `Accumulated deaths until ${date}: ${total.toLocaleString()} (${added.toLocaleString()} loaded)`;
               setTimeout(addBatch, 10);
             } else {
-              output.innerText = `Acumulated deaths until ${date}: ${total.toLocaleString()} (👶 ${children}, 🧍‍♀️ ${women}, 🧍‍♂️ ${men})`;
+              output.innerText = `Accumulated deaths until ${date}: ${total.toLocaleString()}\n`
+                               + `Children 🧒🏻: ${children.toLocaleString()}\n`
+                               + `Women 👩🏽: ${women.toLocaleString()}\n`
+                               + `Men 🧔🏾: ${men.toLocaleString()}`;
             }
           }
 
