@@ -173,7 +173,7 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                     environment.PUBLIC_HTML_FILES_PATH,
                     'graphs',
                     'infrastructure_loss',
-                    'plot_infra.html',
+                    'infrastructure_loss.html',
                 ),
                 'text/html',
             )
