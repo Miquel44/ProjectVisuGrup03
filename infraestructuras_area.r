@@ -1,3 +1,4 @@
+
 library(tidyverse)
 library(plotly)
 library(htmlwidgets)
@@ -27,7 +28,7 @@ noms_amigables <- tibble(
     "educational_buildings_destroyed",
     "educational_buildings_damaged",
     "places_of_worship_mosques_destroyed", 
-    "places_of_worship_mosques_damaged", 
+    #"places_of_worship_mosques_damaged",  # Eliminada la categoría dañada de mezquitas
     "places_of_worship_churches_destroyed"
   ),
   nom_amic = c(
@@ -35,24 +36,24 @@ noms_amigables <- tibble(
     "Destroyed educational buildings",
     "Damaged educational buildings",
     "Destroyed mosques", 
-    "Damaged mosques", 
+    #"Damaged mosques",               # Eliminada de etiquetas
     "Destroyed churches"
   )
 )
 
 ordre_factors <- c(
   "Destroyed mosques", 
-  "Damaged mosques",
+  #"Damaged mosques",               # Eliminada de orden
   "Destroyed civic buildings", 
   "Destroyed educational buildings",
   "Damaged educational buildings",
   "Destroyed churches"
 )
 
-# Colors opacs (sense transparència)
+# Colores sin transparencia
 colors_palestina <- c(
   "Destroyed mosques" = "#007A3D",
-  "Damaged mosques" = "#2EBF76",
+  #"Damaged mosques" = "#2EBF76", # Eliminado
   "Destroyed civic buildings" = "#CE1126",
   "Destroyed educational buildings" = "#000000",
   "Damaged educational buildings" = "#555555",
@@ -66,6 +67,8 @@ data_long <- data_long %>%
     nom_amic = factor(nom_amic, levels = ordre_factors)
   ) %>%
   filter(report_date <= as.Date("2025-04-28")) %>%
+  # Eliminar explícitamente "Damaged mosques" si queda
+  filter(nom_amic != "Damaged mosques") %>%
   arrange(nom_amic, report_date) %>%
   group_by(nom_amic) %>%
   mutate(value_acum = value) %>%
@@ -78,18 +81,18 @@ data_long <- data_long %>%
       "Cumulative: ", value_acum
     ),
     contexto = paste0(
-      "<div style='color:white; max-height:60vh; overflow-y:auto; padding:10px;'>
-        <style>
-          a.custom-link { all: unset !important; cursor: pointer !important; }
-          div a.custom-link, div a.custom-link:hover {
-            color: #FF0000 !important;
-            border-bottom: 1px solid #FF0000 !important;
-          }
-          .tight-heading { margin: 0 0 8px 0 !important; line-height: 1.2 !important; }
-        </style>
-        <h2 style='color:#FF0000;'>", nom_amic, "</h2>
-        <p style='color:#ccc; line-height:1.6;'>Date: ", fecha, "<br>Cumulative Count: ", value_acum, "</p>
-      </div>"
+      "<div style='color:white; max-height:60vh; overflow-y:auto; padding:10px;'>",
+      "<style>",
+      "a.custom-link { all: unset !important; cursor: pointer !important; }",
+      "div a.custom-link, div a.custom-link:hover {",
+      "color: #FF0000 !important;",
+      "border-bottom: 1px solid #FF0000 !important;",
+      "}",
+      ".tight-heading { margin: 0 0 8px 0 !important; line-height: 1.2 !important; }",
+      "</style>",
+      "<h2 style='color:#FF0000;'>", nom_amic, "</h2>",
+      "<p style='color:#ccc; line-height:1.6;'>Date: ", fecha, "<br>Cumulative Count: ", value_acum, "</p>",
+      "</div>"
     )
   )
 
@@ -104,8 +107,6 @@ categories_completes <- tibble(
 
 data_long <- bind_rows(categories_completes, data_long)
 
-# --- Creació del gràfic amb àrees opaces ---
-plot_simple <- plot_ly()
 
 for (categoria in ordre_factors) {
   df_categoria <- data_long %>% filter(nom_amic == categoria)
@@ -119,7 +120,7 @@ for (categoria in ordre_factors) {
       name = categoria,
       fill = 'tonexty',
       stackgroup = 'one',
-      fillcolor = colors_palestina[[as.character(categoria)]],
+      fillcolor = colors_palestina[[as.character(categoria)]],  # Color sólido
       text = ~hover_text,
       hoverinfo = "text"
     )
@@ -128,7 +129,7 @@ for (categoria in ordre_factors) {
 plot_simple <- plot_simple %>%
   layout(
     paper_bgcolor = 'rgba(0,0,0,0.35)',
-    plot_bgcolor = 'rgba(0,0,0,0.35)',
+    plot_bgcolor = 'rgba(0,0,0,0)',
     title = list(
       text = "<b>Essential Infrastructures Damage</b>",
       font = list(size = 22, color = "white"),
@@ -138,13 +139,13 @@ plot_simple <- plot_simple %>%
     legend = list(
       title = list(text = "<b>Infrastructure types</b>", font = list(color = "white")),
       font = list(size = 11, color = "white"),
-      bgcolor = 'rgba(0,0,0,0.35)',  # Mateix fons que el gràfic
-      bordercolor = 'rgba(255,255,255,0.2)',  # Opcional: un petit contorn
+      bgcolor = 'rgba(0,0,0,0.35)',  
+      bordercolor = 'rgba(255,255,255,0.2)',  
       borderwidth = 1
     ),
     xaxis = list(
       title = "",
-      gridcolor = 'rgba(255,255,255,0.15)',  # Línies suaus, visibles
+      gridcolor = 'rgba(255,255,255,0.15)',
       color = "white",
       tickfont = list(size = 12),
       range = c(min(data_long$report_date), as.Date("2025-04-28"))
@@ -153,7 +154,7 @@ plot_simple <- plot_simple %>%
       title = list(
         text = "Acumulative",
         font = list(size = 14, color = "white")),
-      gridcolor = 'rgba(255,255,255,0.15)',  # Mateix que a X
+      gridcolor = 'rgba(255,255,255,0.15)',
       color = "white",
       tickfont = list(size = 12)
     ),
@@ -164,7 +165,6 @@ plot_simple <- plot_simple %>%
     )
   ) %>%
   config(displayModeBar = FALSE)
-
 
 plot_simple
 
