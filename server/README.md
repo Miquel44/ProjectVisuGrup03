@@ -128,6 +128,10 @@ else
     echo "Cerbot has been installed."
 fi
 
+echo "Setting working directory."
+cd ProjectVisuGrup03/server
+echo "Working directory set."
+
 echo "Generating SSL certificates with cerbot."
 sudo certbot --nginx -d deathinpalestine.me -d www.deathinpalestine.me
 echo "SSL certificates generated."
