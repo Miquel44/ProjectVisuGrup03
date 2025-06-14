@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Types of Death</title>
   <link rel="stylesheet" href="../../css/global_styles.css" />
   <link rel="apple-touch-icon" sizes="180x180" href="../../static/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="../../static/favicon-32x32.png">
@@ -17,6 +18,18 @@
 <script src="../../graphs/types_of_death/libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
 <!-- <link href="libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" /> -->
 <script src="../../graphs/types_of_death/libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  <style>
+  .body{
+  display:flex;
+  flex-direction:column;       /* apila los bloques uno debajo del otro */
+  align-items:center;
+  justify-content:flex-start;
+  min-height:100vh;
+  margin:0;                /* espacio natural entre título-bandera-aviso */
+  overflow: hidden;
+  height: 100%;
+}
+  </style>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   var graphDiv = document.getElementById('htmlwidget-4d1ee20852e46aee14c2');

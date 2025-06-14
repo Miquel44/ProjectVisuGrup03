@@ -40,7 +40,15 @@ def print_error(error: str | None = None, print_stack: bool = True):
         del error
 
     environment.logging.error(message.replace('\n  ', '\n\t\t'), stacklevel=3)
-    print(message)
+    print(
+        '['
+        + environment.datetime.now(environment.timezone.utc).isoformat(
+            sep=' ',
+            timespec='milliseconds',
+        )
+        + '] '
+        + message
+    )
     del message
 
 
@@ -59,5 +67,13 @@ def print_message(message: str = ''):
 
     """
     environment.logging.info(message.replace('\n', '\n\t\t'), stacklevel=3)
-    print(message)
+    print(
+        '['
+        + environment.datetime.now(environment.timezone.utc).isoformat(
+            sep=' ',
+            timespec='milliseconds',
+        )
+        + '] '
+        + message
+    )
     del message

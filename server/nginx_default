@@ -1,0 +1,39 @@
+# Redirect all HTTP to HTTPS
+server {
+    listen 80;
+    server_name deathinpalestine.me www.deathinpalestine.me;
+
+    return 301 https://$host$request_uri;
+}
+
+# Redirect HTTPS from non-www to www
+server {
+    listen 443 ssl;
+    server_name deathinpalestine.me;
+
+    ssl_certificate /etc/letsencrypt/live/deathinpalestine.me/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/deathinpalestine.me/privkey.pem;
+
+    return 301 https://www.deathinpalestine.me$request_uri;
+}
+
+# Main HTTPS server (www only)
+server {
+    listen 443 ssl;
+    server_name www.deathinpalestine.me;
+
+    ssl_certificate /etc/letsencrypt/live/deathinpalestine.me/fullchain.pem;
+    ssl_certificate_key /etc/letsencrypt/live/deathinpalestine.me/privkey.pem;
+
+    # Force browsers to always use HTTPS (HSTS)
+    add_header Strict-Transport-Security "max-age=31536000; includeSubDomains" always;
+
+    location / {
+        proxy_pass http://127.0.0.1:8080;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+    }
+}
+

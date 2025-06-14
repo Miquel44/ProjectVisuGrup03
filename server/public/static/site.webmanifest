@@ -8,12 +8,6 @@
             "type": "image/png"
         },
         {
-            "src": "/static/android-chrome-mask.png",
-            "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "maskable"
-        },
-        {
             "src": "/static/android-chrome-512x512.png",
             "sizes": "512x512",
             "type": "image/png"

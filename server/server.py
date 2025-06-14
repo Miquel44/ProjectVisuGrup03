@@ -14,16 +14,20 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
         if isinstance(code, environment.http.server.HTTPStatus):
             code = code.value
         message = self.requestline
+        forwarded_ip = self.headers.get('X-Real-IP', 'No forwarded')
         utils.print_message(
             f'Request: {message} | Code: {code} | Size: {size}'
             + f' | From: {self.client_address[0]}:{self.client_address[1]}'
+            + f' | Forwarded: {forwarded_ip}'
         )
 
     def log_error(self, message_format, *args):
+        forwarded_ip = self.headers.get('X-Real-IP', 'No forwarded')
         utils.print_error(
             error=(
                 f'Error: {args[1]} | Code: {args[0]}'
                 + f' | From: {self.client_address[0]}:{self.client_address[1]}'
+                + f' | Forwarded: {forwarded_ip}'
             ),
             print_stack=False,
         )
@@ -177,7 +181,6 @@ class Server(environment.http.server.BaseHTTPRequestHandler):
                 ),
                 'text/html',
             )
-
 
         elif parsed_path == '/graphs/types_of_death':
             self._serve_file(
